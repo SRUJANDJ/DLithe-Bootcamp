@@ -1,0 +1,42 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parts{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 2px solid white;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+a{
+    display: block;
+    background-color:black;
+    width: 200px;
+    height: 200px;
+    color: black;
+}
+a:visited{
+    background-color: red;
+    color: red;
+    
+    
+}
+.two:active{
+    background-color: red;
+}
+.three:hover{
+    background-color: rgb(233, 188, 129);
+    transform: scale(2);
+    transition-duration: 2s;
+}

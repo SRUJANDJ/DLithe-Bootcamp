@@ -1,0 +1,44 @@
+CSS:
+	3 types		priority
+	*inline 	1
+	*internal	3
+	*external	2
+
+	selectors:
+		*universal
+		*class
+		*id
+		*tag
+		*group
+	
+	font-properties:
+		font-variant:small-caps;
+
+
+	text-properties:
+		letter-spacing,text-indent,text-transform
+
+	
+	display:
+
+
+	pseudo-class:
+			selector:pseudo-class{
+						properties:values;
+						}
+		hover,active,visited(for anchor tag)
+
+
+	background:
+		background-repeat:no-repeat;
+
+
+	position:	absolute
+			fixed->position is changed it doesn't change of scrolling
+			sticky->above all the contents.
+			static->default
+			relative
+
+
+	transition and transform:
+	

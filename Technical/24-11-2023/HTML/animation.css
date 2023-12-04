@@ -1,0 +1,84 @@
+.main{
+    width: 100vw;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first{
+    width: 30%;
+    height: 70%;
+    border: 5px solid white;
+}
+.parts{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 30px;
+    transition-duration: 2s;
+    
+}
+.one:hover{
+    transform:rotate(60deg);
+    transition-duration: 2s;
+}
+.two:hover{
+    width: 50%;
+    transition-duration: 2s;
+    
+}
+.three:hover{
+    height: 50%;
+    transition-duration: 2s;
+    
+}
+.four:hover{
+    border-radius: 50px;
+    transition-duration: 2s;
+    transform: skew(45deg);
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondone:hover{
+    transform: scale(2);
+    transition-duration: 2s;
+}
+
+.secondmain{
+    width: 100vw;
+    height: 200vh;
+    
+}
+div.fixe{
+    position: fixed;
+    background-color: red;
+    width: 200px;
+    
+    
+}
+.absolut{
+    position: absolute;
+    background-color: rgb(201, 137, 224);
+    margin: 10px;
+}
+.relativ{
+    position: relative;
+    background-color: rgb(45, 11, 77);
+    margin: 20px;
+}
+.stati{
+    position: static;
+    background-color: cadetblue;
+    margin: 30px;
+}
+.stick{
+    position: sticky;
+    background-color: black;
+    margin: 40px;
+}

@@ -1,0 +1,90 @@
+Jira software:
+	backlog:to-do list
+	epic: 5 to 10 min tasks
+	
+
+Aglie Methodology:
+	on-premesis:local storage
+	hosted:cloud
+
+	sprints:2 or 4 weeks
+	1 sprint 20 days
+	day1 planning,design
+	18 days execution
+	1 Day retrospective,getting feedback from the customer
+
+	In waterfall customer was able to view after everything was completed, here in agile method customer can view on end of every sprint.
+
+HTML:
+	<img src="" alt="" />
+
+	<video src=""></video> -> attributes:controls(play,pause,sound etc),mute,autoplay(works when mute is used),loop
+
+	<audio src=""></audio> -> attributes: same as above
+
+	<marquee></marquee> -> attributes:behaviour="slide or scroll" scroll->loops slide->stops at one end,direction="" (up,down,left,right),scrollamount="" speed of scroll
+
+	<iframe></iframe> -> used to add content from the links. It doesn't reside in local storage
+
+	list: ordered list, unordered list, discription list
+		ol attribute -> type=""(1,a,A,I,i)
+		ul attribute -> type=""(square,circle,disc)
+		
+		discription list: dl
+		describe: dd
+		define term: dt           
+					<dl>
+						<dt>Nameeeeeeee</dt>			output: nameeeeeeeeee
+						<dd>author</dd>					   author
+					</dl>   
+
+	table:
+		<table>
+			<tr>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>>/td>
+			</tr>
+		</table>
+
+	attributes:	rowspan,colspan,border,caption,cellspacing,cellpadding (border,cellspacing,cellpadding)->are attributes of <table>
+
+	
+
+	form:
+
+	attributes: <input>->type=""(text,password,file,date,checkbox,image,radio,hidden,month), placeholder=""
+	for type radio use name attribute use same attribute value.
+
+
+
+	<form action="">
+            <div>
+                <label for="email">Email: </label>
+                <input type="email">
+            </div>
+            <div>
+                <label for="username">Username: </label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password">
+            </div>
+            <div>
+                <label for="age">Age above 18</label>
+                <input type="checkbox">
+            </div>
+
+
+            <div>
+                <button>Submit</button>
+            </div>
+
+        </form>
+
+
+	

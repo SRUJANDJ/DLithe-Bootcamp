@@ -1,0 +1,41 @@
+Steps in software Engineering:
+	Recquirements collection
+	Mind mapping
+	flow chart
+	functionalities
+	Development
+	Developer testing
+	tester testing
+
+miro: Mind-mapping
+drawsql: Sql tables
+
+There are 8 types of application: Mobile, Desktop, Web, Cloud, Gaming, Enterprise, 
+AI&Ml
+
+Architecture diagram shows the flow. Visualization of how our software looks.
+
+Website: Collection of web-pages. Linking of web-pages
+	Types:
+		static: remains same for everyone. HTML and CSS used. wikipedia
+		Dynamic: Diffrent of users. Builds in realtime has js. bard,social media.
+		e-commerce: 24/7 availabe for users.
+
+
+web-elements:
+	HTML, CSS, JS
+
+HTML:
+	DOCTYPE HTML- Page is of document type
+	UTF-8- unicode version 8
+	
+Tags:
+	b and strong are used for bold
+	i and em are used for italic
+	u for underline
+	pre tag is used to display poem like structure
+	href means hyper refrence
+	target in anchor tag:	_blank - new tab
+				_self loads same tab used for navigating within website. 
+				_parrent opens in parent frame
+				_top opens full body window

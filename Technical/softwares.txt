@@ -1,0 +1,5 @@
+miro: For mind mapping, flowchart and architecture diagram.
+
+drawsql: For drawing sql tables.
+
+jira: jira software
