@@ -5,33 +5,76 @@
     <meta charset="UTF-8">
     <title>login</title>
 </head>
+<style>
+    body {
+        background-color: rgb(244, 240, 234);
+    }
+
+    .main-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+
+    .container {
+
+        background-color: rgb(48, 109, 241);
+        padding: 20px;
+        border-radius: 10PX;
+        color: WHITE;
+        font-size: 20px;
+
+
+    }
+
+    button {
+        margin: 10px;
+        background-color: rgb(41, 183, 55);
+        border-radius: 5px;
+        color: white;
+        border-width: 0;
+        padding: 5px;
+        width: 70px;
+        color: white;
+        margin-left: 70px;
+
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
+</style>
 
 <body>
 
-    <form action="" method="post">
+    <div class="main-container">
+        <div class="container">
+            <form action="" method="post">
 
 
 
-        <div class="input_group_box">
-            <label for="username">Username</label>
-            <div class="input_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="username" name="username" placeholder="Username" required>
-            </div>
+                <div class="container">
+                    <label for="username">Username</label>
+                    <div class="container_input">
+                        <input type="text" id="username" name="username" " required>
+                    </div>
+                </div>
+
+                <div class=" container">
+                        <label for="password">Password</label>
+                        <div class="container_input">
+                            <input type="text" id="password" name="password" required>
+                        </div>
+                    </div>
+
+
+                    <button id="register_submit" type="submit">Submit</button>
+            </form>
         </div>
 
-        <div class="input_group_box">
-            <label for="password">Password</label>
-            <div class="input_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="password" name="password" placeholder="Password" required>
-            </div>
-        </div>
-
-
-        <button id="register_submit" type="submit">Submit</button>
-    </form>
-
+    </div>
     <p>{{message}}</p>
 
 </body>

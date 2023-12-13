@@ -1,41 +1,4 @@
-"""from flask import Flask, request, redirect, url_for, session, render_template
-from flask_mysqldb import MySQL
-import MySQLdb.cursors
-import re 
 
-app=Flask(__name__)
-app.secret_key= 'dj$$$$$'
-app.config['MYSQL_HOST']= 'localhost'
-app.config['MYSQL_USER']= 'root'
-app.config['MYSQL_PASSWORD'] = 'rootuser'
-app.config['MYSQL_DB']='userprofile'
-
-mysql=MySQL(app)
-
-@app.route('/login',methods=['GET','POST'])
-
-def login():
-    if request.method=='POST' and 'username' in request.form and 'password' in request.form:
-        username = request.form['username']
-        password=request.form['password']
-        cursor=mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute('SELECT * FROM fd WHERE username=%s AND password=%s ',(username,password))
-        user = cursor.fetchone()
-        if user:
-            session['loggedin']=True
-            session['id']=user['id']
-            session['username']=user['username']
-            message = 'login successful'
-            return render_template('home.html', message=message)
-        else:
-            message = 'invalid credentials'
-            return render_template('login.html', message=message)
-    return render_template('login.html')
-
-
-
-if __name__=="__main__":
-    app.run(host='0.0.0.0', port=81, debug=True)"""
 from flask import Flask, request, redirect, url_for, session, render_template
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
@@ -50,6 +13,11 @@ app.config['MYSQL_PASSWORD'] = 'rootuser'
 app.config['MYSQL_DB'] = 'userprofile'
 
 mysql = MySQL(app)
+
+@app.route('/',methods=['GET'])
+def home():
+    return render_template('home.html')
+
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -66,8 +34,8 @@ def login():
             session['loggedin'] = True
             session['id'] = user['id']
             session['username'] = user['username']
-            message = 'login successful'
-            return render_template('home.html', message=message)
+            """message = 'login successful'"""
+            return render_template('welcome.html', message=user)
         else:
             message = 'invalid credentials'
             return render_template('login.html', message=message)
@@ -78,15 +46,15 @@ def login():
 def register():
     message = ''
     if request.method == 'POST':
-        username = request.form.get('username',False)
-        password = request.form.get('password',False)
-        email = request.form.get('email',False)
-        phone = request.form.get('phone',False)
-        address = request.form.get('address',False)
-        city = request.form.get('city',False)
-        state = request.form.get('state',False)
-        country = request.form.get('country',False)
-        postcode = request.form.get('postcode',False)
+        username = request.form['username']
+        password = request.form['password']
+        email = request.form['email']
+        phone = request.form['phone']
+        address = request.form['address']
+        city = request.form['city']
+        state = request.form['state']
+        country = request.form['country']
+        postcode = request.form['postcode']
 
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
         try:
@@ -97,9 +65,9 @@ def register():
 
             mysql.connection.commit()
             return redirect(url_for('login'))
-        except:
+        except MySQLdb.IntegrityError as e:
 
-            return f"Username {username} is already taken"
+            return f"{e}"
 
     return render_template('registration.html')
 
@@ -134,9 +102,12 @@ def updateuser(id):
             )
 
         mysql.connection.commit()
-        return redirect(url_for('login'))
+        cursor.execute('select * from fd where id=%s', (id,))
+        data = cursor.fetchone()
+        return render_template('welcome.html',message=data)
 
-    return render_template('updateuser.html')
+
+
 
 @app.route('/deleteuser/<int:id>',methods=['GET'])
 def deleteduser(id):
@@ -148,7 +119,7 @@ def deleteduser(id):
         if data!=None:
             cursor.execute('delete from fd where id=%s and id=%s',(identity,identity))
             mysql.connection.commit()
-            return f'user with id {id} deleted'
+            return redirect(url_for('home'))
         return f'User with id {id} do not exist'
 
 

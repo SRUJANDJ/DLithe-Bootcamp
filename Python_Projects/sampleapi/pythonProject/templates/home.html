@@ -3,12 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Add user</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 </head>
+<style>
+    .container {
+        display: flex;
+        justify-content: end;
+    }
+
+    button {
+        margin: 10px;
+        background-color: rgb(67, 178, 218);
+        border-radius: 5px;
+        color: white;
+        border-width: 0;
+        padding: 10px;
+        width: 100px;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
+</style>
 
 <body>
-    <p>{{message}}</p>
-    <h1>welcome</h1>
+    <div class="container">
+        <div>
+            <button onclick="window.location.href='http://192.168.43.94:5000/login'">Login</button>
+        </div>
+        <div>
+            <button onclick="window.location.href='http://192.168.43.94:5000/register'">Register</button>
+        </div>
+    </div>
 </body>
 
 </html>
