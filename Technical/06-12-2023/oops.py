@@ -22,8 +22,10 @@ class item:
 
     @classmethod
     def instantiate_from_csv(cls):
-        with open('items.csv' , 'r') as f:
+        with open('C:\\Users\\sruja\\Desktop\\DLithe\\Technical\\06-12-2023\\items.csv' , 'r') as f:
+            print(f,"\t f\n")
             reader=csv.DictReader(f)
+            print(reader,"\t reader\n")
             items=list(reader)
         for item in items:
             print(item)
