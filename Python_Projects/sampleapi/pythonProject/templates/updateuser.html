@@ -1,85 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
+    <title> Edit </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registration.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 
 <body>
-    <form action="" method="post">
+    <div class="main-container">
+        <div class="container">
+            <div class="title">Edit</div>
+            <div class="content">
+                <form action="" method="post">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Username</span>
+                            <input type="text" id="username" name="username" value="{{message['username']}}" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="text" id="password" name="password" value="{{message['password']}}" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" value="{{message['email']}}" id="email" name="email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input type="text" id="phone" name="phone" value="{{message['phone']}}" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Address</span>
+                            <input type="text" id="address" name="address" value="{{message['address']}}" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">City</span>
+                            <input type="text" id="city" name="city" value="{{message['city']}}" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">State</span>
+                            <input type="text" id="state" name="state" value="{{message['state']}}" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Country</span>
+                            <input type="text" id="country" name="country" value="{{message['country']}}" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Postcode</span>
+                            <input type="text" id="postcode" name="postcode" value="{{message['postcode']}}" required>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Update">
+                    </div>
 
 
-
-        <div class="input_group_box">
-            <label for="username">Username</label>
-            <div class="input_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="username" name="username" value={{message['username']}} required>
             </div>
+
         </div>
 
-        <div class=" input_group_box">
-            <label for="password">Password</label>
-            <div class="input_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="password" name="password" value={{message['password']}} required>
-            </div>
-        </div>
-        <div class="input_group_box">
-            <label for="email">Email</label>
-            <div class="input_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="email" id="email" name="email" value={{message['email']}} required>
-            </div>
-        </div>
-        <div class="input_group_box">
-            <label for="phone">Phone</label>
-            <div class="input_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="number" id="phone" name="phone" value={{message['phone']}}  required>
-            </div>
-        </div>
-        <div class="input_group_box">
-            <label for="address">Address</label>
-            <div class="input_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="address" name="address" value={{message['address']}} required>
-            </div>
-        </div>
-        <div class="input_group_box">
-            <label for="city">City</label>
-            <div class="input_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="city" name="city" value={{message['city']}} required>
-            </div>
-        </div>
-        <div class="input_group_box">
-            <label for="state">State</label>
-            <div class="input_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="state" name="state" value={{message['state']}} required>
-            </div>
-        </div>
-        <div class="input_group_box">
-            <label for="country">Country</label>
-            <div class="input_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="country" name="country" value={{message['country']}} required>
-            </div>
-        </div>
-        <div class="input_group_box">
-            <label for="postcode">postcode</label>
-            <div class="input_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="postcode" name="postcode" value={{message['postcode']}} required>
-            </div>
-        </div>
+    </div>
+
+    </div>
 
 
-        <button id="register_submit" type="submit">Submit</button>
     </form>
+    </div>
+    </div>
+    </div>
 
 </body>
 

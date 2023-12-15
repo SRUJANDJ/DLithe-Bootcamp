@@ -1,0 +1,158 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="editprofile.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Edit Profile</h1>
+            <form action="">
+                <div>
+                    <label for="username">Username</label>
+                    <div class="input-box">
+                        <input type="text" name="username" id="username">
+                    </div>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <div class="input-box">
+                        <input type="text" name="password" id="password">
+                    </div>
+                </div>
+                <div>
+                    <label for="gender">Gender</label>
+                    <div class="input-box">
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="Non-binary">Non-binary</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                            <option value="other">Other</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="dob">Date of birth</label>
+                    <div>
+                        <input type="date" name="dob" id="dob">
+                    </div>
+                </div>
+                <div>
+                    <label for="country">Country or region</label>
+                    <div class="input-box">
+                        <input type="text" name="country" id="country">
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" name="country" id="country"><label for="terms">Share my registration data
+                        with
+                        Spotify's content providers for marketing purposes.</label>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Registration </title>
+    <link rel="stylesheet" href="editprofile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="back">
+        <button class="login__submit" id="backbutton"
+            onclick="window.location.href='http://192.168.43.94:5000'">back</button>
+    </div>
+    <div class="main-container">
+        <div class="container">
+            <div class="title">Edit Profile</div>
+            <div class="content">
+                <form action="" method="post">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Username</span>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" id="email" name="email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="text" id="password" name="password" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="gender" class="details">Gender</label>
+                            <div class="input-box">
+                                <select name="gender" id="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="Non-binary">Non-binary</option>
+                                    <option value="Prefer not to say">Prefer not to say</option>
+                                    <option value="other">Other</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="dob" class="details">Date of birth</label>
+                            <div>
+                                <input type="date" name="dob" id="dob">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <label for="country" class="details">Country</label>
+                            <div class="input-box">
+                                <select name="country" id="country">
+                                    <option value="India">India</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="checkboxsize" type="checkbox" name="country" id="country"><label for="terms"
+                                class="terms">Share my registration
+                                data with Spotify's content providers for marketing purposes.</label>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <div class="button">
+                            <input type="submit" value="Save profile">
+                        </div>
+                    </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    </form>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

@@ -4,12 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>User Profile</title>
+    <style>
+        .main-container {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button {
+            margin: 10px;
+            background-color: rgb(67, 178, 218);
+            border-radius: 5px;
+            color: white;
+            border-width: 0;
+            padding: 10px;
+            width: 100px;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        #deletebutton {
+            background-color: red;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .userinfo {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .userinfo div {
+            width: 48%;
+            margin-bottom: 15px;
+        }
+
+        .userinfo p {
+            font-weight: bold;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="button-container">
+        <div>
+            <button onclick="window.location.href='http://192.168.43.94:5000'">Logout</button>
+        </div>
+        <div class="buttons">
+            <button
+                onclick="window.location.href=`http://192.168.43.94:5000/updateuser/{{message['id']}}`">Edit</button>
+            <button id="deletebutton"
+                onclick="window.location.href=`http://192.168.43.94:5000/deleteuser/{{message['id']}}`">Delete</button>
+        </div>
+    </div>
 
-    {{message}}
+    <div class="main-container">
+        <div class="container">
+            <div class="header">
+                <h1>{{message['username'].upper()}}</h1>
+
+            </div>
+
+            <div class="userinfo">
+                <div class="labels">
+                    <p>ID</p>
+                    <p>Username</p>
+                    <p>Password</p>
+                    <p>Email</p>
+                    <p>Phone</p>
+                    <p>Address</p>
+                    <p>City</p>
+                    <p>State</p>
+                    <p>Country</p>
+                    <p>Postcode</p>
+                    <!-- Add the rest of your labels here -->
+                </div>
+                <div class="data">
+                    <p>{{message['id']}}</p>
+                    <p>{{message['username']}}</p>
+                    <p>{{message['password']}}</p>
+                    <p>{{message['email']}}</p>
+                    <p>{{message['phone']}}</p>
+                    <p>{{message['address']}}</p>
+                    <p>{{message['city']}}</p>
+                    <p>{{message['state']}}</p>
+                    <p>{{message['country']}}</p>
+                    <p>{{message['postcode']}}</p>
+                    <!-- Add the rest of your data here -->
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

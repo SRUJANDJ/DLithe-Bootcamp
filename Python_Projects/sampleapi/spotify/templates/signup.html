@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/signup.css')}}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="loginpages">
+            <a href="http://192.168.43.94:5001">
+                <p class="button back">Back</p>
+            </a>
+            <div class="loginpage">
+                <h1>Signup to start listening</h1>
+                <form action="" method="post">
+                    <div class="inputs">
+                        <label for="username">
+                            Username
+                        </label>
+                        <div>
+                            <input type="username" name="username" required>
+                        </div>
+
+                    </div>
+                    <div class="inputs">
+                        <label for="email">
+                            Email
+                        </label>
+                        <div>
+                            <input type="email" name="email" required>
+                        </div>
+
+                    </div>
+                    <div class="inputs">
+                        <label for="password">
+                            Create Password
+                        </label>
+                        <div>
+                            <input type="password" name="password" required>
+                        </div>
+
+                    </div>
+
+                    <div class="inputs">
+                        <button class="button" type="submit">Signup</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Registration </title>
+    <link rel="stylesheet" href="{{url_for('static',filename=('css/editprofile.css'))}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="back">
+
+        <p><a href="http://192.168.43.94:5001/back/{{message['id']}}"><img id="backbutton"
+                    src="{{url_for('static',filename='images/arrow-89-xl.png')}}" alt=""></a></p>
+
+    </div>
+
+    <div class="main-container">
+
+        <div class="container">
+
+            <div class="title">add songs</div>
+            <div class="content">
+                <form action="" method="post">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Title</span>
+                            <input type="album id=" title" name="title" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Album</span>
+                            <input type="text" id="album" name="album" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Date </span>
+                            <input type="text" id="date" name="date" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Duration</span>
+                            <input type="text" id="duration" name="duration" required>
+                        </div>
+
+                    </div>
+                    <div class="button-container">
+                        <div class="button">
+                            <input type="submit" value="Add">
+                        </div>
+                    </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    </form>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

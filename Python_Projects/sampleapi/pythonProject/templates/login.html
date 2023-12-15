@@ -4,78 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <title>login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="../">
+
 </head>
-<style>
-    body {
-        background-color: rgb(244, 240, 234);
-    }
-
-    .main-container {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 600px;
-    }
-
-    .container {
-
-        background-color: rgb(48, 109, 241);
-        padding: 20px;
-        border-radius: 10PX;
-        color: WHITE;
-        font-size: 20px;
-
-
-    }
-
-    button {
-        margin: 10px;
-        background-color: rgb(41, 183, 55);
-        border-radius: 5px;
-        color: white;
-        border-width: 0;
-        padding: 5px;
-        width: 70px;
-        color: white;
-        margin-left: 70px;
-
-    }
-
-    button:hover {
-        transform: scale(1.05);
-    }
-</style>
 
 <body>
-
-    <div class="main-container">
-        <div class="container">
-            <form action="" method="post">
-
-
-
-                <div class="container">
-                    <label for="username">Username</label>
-                    <div class="container_input">
-                        <input type="text" id="username" name="username" " required>
-                    </div>
-                </div>
-
-                <div class=" container">
-                        <label for="password">Password</label>
-                        <div class="container_input">
-                            <input type="text" id="password" name="password" required>
-                        </div>
-                    </div>
-
-
-                    <button id="register_submit" type="submit">Submit</button>
-            </form>
-        </div>
-
+    <div class="back">
+        <button class="button login__submit button__text" id="backbutton"
+            onclick="window.location.href='http://192.168.43.94:5000'">back</button>
     </div>
-    <p>{{message}}</p>
+
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" method="post" action="">
+
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="Username" id="username" name="username"
+                            required>
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" placeholder="Password" id="password" name="password"
+                            required>
+                    </div>
+                    <i class="login__icon fas fa-user"></i>
+                    <p class="message">{{message}}</p>
+                    <button class="button login__submit">
+                        <span class="button__text">Log In Now</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                </form>
+
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 

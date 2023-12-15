@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.main-container {
+    font-family: 'Arial', sans-serif;
+     margin: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#deletebutton {
+    background-color: red;
+    border-width: 0;
+    color: white;
+    width: 180px;
+    
+
+}
+
+#logout {
+    background-color: #242624;
+    color: white;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.userinfo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.userinfo div {
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+.userinfo p {
+    font-weight: bold;
+    margin: 5px 0;
+    width: 80%;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.label {
+    font-size: 20px;
+    color: rgb(9, 8, 8);
+}
+
+.data {
+    font-size: 18px;
+    color: #103f6f;
+    border: 1px solid rgb(113, 110, 110);
+    padding: 10px;
+    border-radius: 10px;
+}
+.deletebutton{
+    display: flex;
+    justify-content: end;
+   
+    
+    
+    
+}
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+    margin: 20px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	text-align: center;
+	width: 100px;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+    transform: scale(1.05);
+}

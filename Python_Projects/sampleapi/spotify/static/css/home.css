@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-color:black;
+}
+.main{
+    
+    /* height: 120vh; */
+    display: flex;
+    background-color: black;
+    color:white;
+
+}
+.left-division{
+    width: 25%;
+}
+.left{
+    background-color: black;
+    width: 25%;
+    position: fixed;
+}
+.left-box{
+    height: 150px;
+    background-color: rgb(36, 34, 34);
+    margin: 10px;
+    border-radius: 10px;
+    padding-top: 20px;
+   
+}
+.left-box-second{
+    height: 200px;
+}
+.left-last{
+    height: 300px;
+}
+.sidebar-content{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    margin-left: 20px;
+}
+.sidebar-heading{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    margin-left: 20px;
+
+}
+.sidebar-innerpage{
+    background-color: rgb(63, 65, 65);
+    border-radius: 10px;
+    padding: 15px;
+}
+.images{
+    width: 20px;
+    height: 20px;
+}
+.sidebar-names{
+    padding-left: 5px;
+}
+.spacing{
+    margin-left: 15px;
+}
+
+.right{
+    background-color: black;
+    width: 75%;
+    
+    
+}
+.right-top{
+    position: fixed;
+    width: 73vw;
+    background-color: rgb(36, 34, 34);
+    height: 50px;
+    margin-left: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.spacing-division{
+    height: 70px;
+    width: 75%;
+}
+.right-bottom{
+    background-color:rgb(36, 34, 34);
+    height: 350px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px;
+}
+.right-main{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.parts{
+    width: 180px;
+    height: 240px;
+    /* background-color: rgb(110, 109, 109); */
+    background-color: rgb(62, 61, 61);
+    border-radius: 10px;
+   
+
+}
+.right-images{
+    width: 160px;
+    height: 150px;
+    background-size: cover;
+    margin: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: rgb(164, 169, 171);
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.login{
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    height: 24px;
+    margin-right: 20px;
+    text-align: center;
+    border-width: 0;
+    padding: 5px;
+    
+}
+.login:hover{
+    transform: scale(1.1);
+}
+a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.signup{
+    color: rgb(185, 180, 180);
+    margin-right: 10px;
+}
+.signup:hover{
+    color: white;
+   
+}
+.parts:hover{
+    transform: scale(1.05);
+    /* background-color: rgb(102, 51, 51); */
+    background-color: black;
+    color: black;
+}
+.para1{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.para2{
+    color: white;
+    font-size: 16px;
+    font-weight: 500    ;
+}
+
+.button{
+    width: 150px;
+    background-color: white;
+    border-radius: 10px;
+    height: 24px;
+    margin-right: 20px;
+    text-align: center;
+    border-width: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    
+    
+}
+h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.title{
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.right-heading-top{
+    position: fixed;
+    width: 73vw;
+    background-color: rgb(36, 34, 34);
+    height: 8vh;
+    margin-left: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.heading{
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 10px;
+    color: white;
+    font-variant: small-caps;
+}
+.logout{
+    margin-top: 10px;
+}
+.song-descp{
+    font-size: 15px;
+    font-weight: 300;
+}
+.footer-bottom{
+    background-color:rgb(36, 34, 34);
+    height: 420px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px;
+}
+.footer-main{
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: end;
+    padding-bottom: 20px;
+}
+.footer-parts{
+    width: 150px;
+    height: 220px;
+    /* background-color: rgb(110, 109, 109); */
+    border-radius: 10px;
+}
+.footer-heading{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    padding: 5px;
+}
+.footer-descp{
+    font-size: 18px;
+    font-weight: 500;
+    color: grey;
+    padding: 5px;
+}
+.footer-descp:hover{
+    color: white;
+}

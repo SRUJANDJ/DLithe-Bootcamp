@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/login.css')}}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class=" main">
+
+        <form action="" name="myform" method="post">
+
+            <div class="loginpages">
+                <a href="http://192.168.43.94:5001">
+                    <p class="button back">Back</p>
+                </a>
+                <div class="loginpage">
+
+                    <div class="inputs">
+                        <label for="email">
+                            Email
+                        </label>
+                        <div>
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <label for="password">
+                            password
+                        </label>
+                        <div>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <button class="button">Login In</button>
+                    </div>
+                    <div class="inputs">
+                        <Span class="signup forgot-password"><a href="http://192.168.43.94:5001/resetpassword">Forgot
+                                your
+                                password?</a></Span>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="line"></p>
+                    </div>
+                    <div class="inputs">
+                        Don't have account <Span class="signup"><a href="http://192.168.43.94:5001/signup">Sign
+                                up</a></Span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./spotify.js"></script>
+</body>
+
+</html>

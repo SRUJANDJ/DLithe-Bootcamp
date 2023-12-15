@@ -3,60 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Add user</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/welcome.css')}}">
+    <title>User Profile</title>
+
 </head>
-<style>
-    .container {
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    button {
-        margin: 10px;
-        background-color: rgb(67, 178, 218);
-        border-radius: 5px;
-        color: white;
-        border-width: 0;
-        padding: 10px;
-        width: 100px;
-    }
-
-    button:hover {
-        transform: scale(1.05);
-    }
-</style>
 
 <body>
-    <div class="container">
+    <div class="button-container">
         <div>
-            <button onclick="window.location.href=`http://192.168.43.94:5000`">Logout</button>
+            <button class="login__submit"
+                onclick="window.location.href=`http://192.168.43.94:5000/updateuser/{{message['id']}}`">Edit</button>
         </div>
         <div class="buttons">
-
-            <button
-                onclick="window.location.href=`http://192.168.43.94:5000/updateuser/{{message['id']}}`">Edit</button>
-
-
-            <button
-                onclick="window.location.href=`http://192.168.43.94:5000/deleteuser/{{message['id']}}`">Delete</button>
+            <button class="login__submit" id="logout"
+                onclick="window.location.href='http://192.168.43.94:5000'">Logout</button>
 
         </div>
     </div>
-    <h1>{{message['username'].upper()}}</h1>
-    <ul>
-        <li>ID: {{message['id']}}</li>
-        <li>Username: {{message['username']}}</li>
-        <li>Password: {{message['password']}}</li>
-        <li>Email: {{message['email']}}</li>
-        <li>Phone: {{message['phone']}}</li>
-        <li>Address: {{message['address']}}</li>
-        <li>City: {{message['city']}}</li>
-        <li>State: {{message['state']}}</li>
-        <li>Country: {{message['country']}}</li>
-        <li>Postcode: {{message['postcode']}}</li>
 
-    </ul>
+    <div class="main-container">
+        <div class="container">
+            <div class="header">
+                <h1>{{message['username'].upper()}}</h1>
+
+            </div>
+
+            <div class="userinfo">
+                <div class="userdata">
+                    <p class="label">ID</p>
+                    <p class="data">{{message['id']}}</p>
+                </div>
+                <div class="userdata">
+                    <p class="label">Username</p>
+                    <p class="data">{{message['username']}}</p>
+                </div>
+                <div class="userdata">
+                    <p class="label">Password</p>
+                    <p class="data">{{message['password']}}</p>
+                </div>
+                <div class="userdata">
+                    <p class="label">Email</p>
+                    <p class="data">{{message['email']}}</p>
+                </div>
+                <div class="userdata">
+                    <p class="label">Phone</p>
+                    <p class="data">{{message['phone']}}</p>
+                </div>
+                <div class="userdata">
+                    <p class="label">Address</p>
+                    <p class="data">{{message['address']}}</p>
+                </div>
+                <div class="userdata">
+                    <p class="label">City</p>
+                    <p class="data">{{message['city']}}</p>
+                </div>
+                <div class="userdata">
+                    <p class="label">State</p>
+                    <p class="data">{{message['state']}}</p>
+                </div>
+                <div class="userdata">
+                    <p class="label">Country</p>
+                    <p class="data">{{message['country']}}</p>
+                </div>
+                <div class="userdata">
+                    <p class="label">Postcode</p>
+                    <p class="data">{{message['postcode']}}</p>
+                </div>
+
+
+            </div>
+            <div class="deletebutton">
+                <div style="text-align: center;">
+                    <button id="deletebutton" class="login__submit"
+                        onclick="window.location.href=`http://192.168.43.94:5000/deleteuser/{{message['id']}}`">Delete
+                        Account</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 

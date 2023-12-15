@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/trail.css')}}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left-division">
+
+        </div>
+        <div class="left">
+            <div class="left-box">
+                <!-- <div class="sidebar-content">
+                    <img class="images" src="./images/download.png" alt=""><span class="sidebar-names">Spotify</span>
+                </div> -->
+                <div class="sidebar-content">
+                    <a href="http://192.168.43.94:5001/back/{{message['id']}}"><img class="images"
+                            src="{{url_for('static',filename='images/home-xxl.png')}}" alt=""><span
+                            class="sidebar-names spacing">Home</span></a>
+                </div>
+                <div class="sidebar-content">
+                    <img src="{{url_for('static',filename='images/search-12-xxl.png')}}" alt="" class="images"><span
+                        class="sidebar-names spacing">Search</span>
+                </div>
+
+            </div>
+            <div class="left-box left-last">
+                <div class="sidebar-content">
+                    <img src="{{url_for('static',filename='images/book-xl.png')}}" alt="" class="images"><span
+                        class="sidebar-heading spacing">Your
+                        Library</span>
+                </div>
+                <div class="sidebar-content">
+                    <span class="sidebar-items">Playlist</span>
+                    <span class="sidebar-items">Artist</span>
+                </div>
+                <div class="sidebar-content">
+                    <div class="search-recents">
+                        <div class="search">
+                            <img src="{{url_for('static',filename='images/seach.png')}}" alt="" class="search-icon">
+                        </div>
+                        <div class="recents">
+                            <div>
+                                <span class="recents-word">Recents</span>
+                            </div>
+                            <div class="hamburger recent-icon">
+                                &#9776;
+                            </div>
+                            <!-- <div>
+                                <img src="{{url_for('static',filename='css/trail.css')}}images/recent.png" alt=""
+                                    class="recent-icon">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="lib-content">
+                    <div class="artist">
+                        <div>
+                            <img src="{{url_for('static',filename='images/spotify_liked.jpeg')}}" alt=""
+                                class="liked-pic">
+                        </div>
+                        <div class="artist-details">
+                            <p class="artist-name">Liked Songs</p>
+                            <p class="artist-role">Playlist . 2 Songs</p>
+                        </div>
+
+                    </div>
+                    <div class="artist">
+                        <div>
+                            <img src="{{url_for('static',filename='images/alanwalker.jpeg')}}" alt=""
+                                class="artist-pic">
+                        </div>
+                        <div class="artist-details">
+                            <p class="artist-name">Alan Walker</p>
+                            <p class="artist-role">Artist</p>
+                        </div>
+
+                    </div>
+                    <div class="artist">
+                        <div>
+                            <img src="{{url_for('static',filename='images/arijit.jpeg')}}" alt="" class="artist-pic">
+                        </div>
+                        <div class="artist-details">
+                            <p class="artist-name">Arijit Singh</p>
+                            <p class="artist-role">Artist</p>
+                        </div>
+
+                    </div>
+                    <div class="artist">
+                        <div>
+                            <img src="{{url_for('static',filename='images/arman.jpg')}}" alt="" class="artist-pic">
+                        </div>
+                        <div class="artist-details">
+                            <p class="artist-name">Arman Malik</p>
+                            <p class="artist-role">Artist</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- <div class="sidebar-content">
+                    <div class="sidebar-innerpage">
+                        <p class="para1">Create your first playlist</p>
+                        <p class="para2">It's easy, we'll help you</p>
+                        <button class="button">Create Playlist</button>
+                    </div>
+
+                </div> -->
+            </div>
+            <!-- <div class="left-box left-last">
+                <div class="sidebar-content">
+                    <div class="sidebar-innerpage">
+                        <p class="para1">Lets find some Podcasts to follow</p>
+                        <p class="para2">We'll keep you updated on new episodes</p>
+                        <button class="button">Browse Podcasts</button>
+                    </div>
+
+                </div>
+            </div> -->
+
+        </div>
+        <div class="right">
+            <div class="temp">
+                <div>
+                    <img src="{{url_for('static',filename='css/images/lofi.jpegs')}}" alt="" class="tone">
+                </div>
+                <div class="title-heading">
+                    <h1 class="heading">Lofi beats</h1>
+                    <p class="top-para">chil beats, lofi vibes, new tracks every week.....</p>
+                </div>
+            </div>
+            <div class="dividing">
+                <div class="table">
+                    <div class="hash">
+                        <p>#</p>
+                    </div>
+                    <div class="title">
+                        <p>Title</p>
+                    </div>
+                    <div class="album">
+                        <p>Album</p>
+                    </div>
+                    <div class="date">
+                        <p>Date added</p>
+                    </div>
+                    <div class="duration">
+                        <p>Duration</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="table">
+                    <div class="hash">
+                        <p>1</p>
+                    </div>
+                    <div class="title">
+                        <p>maskros</p>
+                    </div>
+                    <div class="album">
+                        <p>maskros</p>
+                    </div>
+                    <div class="date">
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>3:03</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>2</p>
+                    </div>
+                    <div class="title">
+                        <p>Ia vie</p>
+                    </div>
+                    <div class="album">
+                        <p>Ia vie</p>
+                    </div>
+                    <div class="date">
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>1:52</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>3</p>
+                    </div>
+                    <div class="title">
+                        <p>Maca</p>
+                    </div>
+                    <div class="album">
+                        <p>Maca</p>
+                    </div>
+                    <div class="date">
+                        <p>4 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:25</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>4</p>
+                    </div>
+                    <div class="title">
+                        <p>sunsmoke</p>
+                    </div>
+                    <div class="album">
+                        <p>sunsmoke</p>
+                    </div>
+                    <div class="date">
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>1:13</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>5</p>
+                    </div>
+                    <div class="title">
+                        <p>Who's Driving?</p>
+                    </div>
+                    <div class="album">
+                        <p>Who's Driving?</p>
+                    </div>
+                    <div class="date">
+                        <p>5 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:19</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>6</p>
+                    </div>
+                    <div class="title">
+                        <p>peanut butter shake</p>
+                    </div>
+                    <div class="album">
+                        <p>longing for</p>
+                    </div>
+                    <div class="date">
+                        <p>6 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:45</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>7</p>
+                    </div>
+                    <div class="title">
+                        <p>Milk & Cookies</p>
+                    </div>
+                    <div class="album">
+                        <p>Milk & Cookies</p>
+                    </div>
+                    <div class="date">
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:04</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>8</p>
+                    </div>
+                    <div class="title">
+                        <p>Summer Rain</p>
+                    </div>
+                    <div class="album">
+                        <p>Summer Rain</p>
+                    </div>
+                    <div class="date">
+                        <p>4 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:34</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>9</p>
+                    </div>
+                    <div class="title">
+                        <p>Okabe</p>
+                    </div>
+                    <div class="album">
+                        <p>Okabe</p>
+                    </div>
+                    <div class="date">
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>1:20</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>10</p>
+                    </div>
+                    <div class="title">
+                        <p>Sunset Boulevard</p>
+                    </div>
+                    <div class="album">
+                        <p>Sunset Boulevard</p>
+                    </div>
+                    <div class="date">
+                        <p>5 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:15</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>11</p>
+                    </div>
+                    <div class="title">
+                        <p>glow</p>
+                    </div>
+                    <div class="album">
+                        <p>glow</p>
+                    </div>
+                    <div class="date">
+                        <p>6 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:09</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>12</p>
+                    </div>
+                    <div class="title">
+                        <p>maskros</p>
+                    </div>
+                    <div class="album">
+                        <p>maskros</p>
+                    </div>
+                    <div class="date">
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>3:03</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>13</p>
+                    </div>
+                    <div class="title">
+                        <p>Ia vie</p>
+                    </div>
+                    <div class="album">
+                        <p>Ia vie</p>
+                    </div>
+                    <div class="date">
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>1:52</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>14</p>
+                    </div>
+                    <div class="title">
+                        <p>Maca</p>
+                    </div>
+                    <div class="album">
+                        <p>Maca</p>
+                    </div>
+                    <div class="date">
+                        <p>4 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:25</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>15</p>
+                    </div>
+                    <div class="title">
+                        <p>sunsmoke</p>
+                    </div>
+                    <div class="album">
+                        <p>sunsmoke</p>
+                    </div>
+                    <div class="date">
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>1:13</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>16</p>
+                    </div>
+                    <div class="title">
+                        <p>Who's Driving?</p>
+                    </div>
+                    <div class="album">
+                        <p>Who's Driving?</p>
+                    </div>
+                    <div class="date">
+                        <p>5 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:19</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>17</p>
+                    </div>
+                    <div class="title">
+                        <p>peanut butter shake</p>
+                    </div>
+                    <div class="album">
+                        <p>longing for</p>
+                    </div>
+                    <div class="date">
+                        <p>6 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:45</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>18</p>
+                    </div>
+                    <div class="title">
+                        <p>Milk & Cookies</p>
+                    </div>
+                    <div class="album">
+                        <p>Milk & Cookies</p>
+                    </div>
+                    <div class="date">
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:04</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>19</p>
+                    </div>
+                    <div class="title">
+                        <p>Summer Rain</p>
+                    </div>
+                    <div class="album">
+                        <p>Summer Rain</p>
+                    </div>
+                    <div class="date">
+                        <p>4 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:34</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>20</p>
+                    </div>
+                    <div class="title">
+                        <p>Okabe</p>
+                    </div>
+                    <div class="album">
+                        <p>Okabe</p>
+                    </div>
+                    <div class="date">
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>1:20</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>21</p>
+                    </div>
+                    <div class="title">
+                        <p>Sunset Boulevard</p>
+                    </div>
+                    <div class="album">
+                        <p>Sunset Boulevard</p>
+                    </div>
+                    <div class="date">
+                        <p>5 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:15</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="hash">
+                        <p>22</p>
+                    </div>
+                    <div class="title">
+                        <p>glow</p>
+                    </div>
+                    <div class="album">
+                        <p>glow</p>
+                    </div>
+                    <div class="date">
+                        <p>6 days ago</p>
+                    </div>
+                    <div class="duration">
+                        <p>2:09</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>

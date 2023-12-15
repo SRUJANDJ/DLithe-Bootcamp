@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Registration </title>
+    <link rel="stylesheet" href="{{url_for('static',filename=('css/editprofile.css'))}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="back">
+
+        <p><a href="http://192.168.43.94:5001/back/{{message['id']}}"><img id="backbutton"
+                    src="{{url_for('static',filename='images/arrow-89-xl.png')}}" alt=""></a></p>
+
+    </div>
+
+    <div class="main-container">
+
+        <div class="container">
+
+            <div class="title">Edit Profile</div>
+            <div class="content">
+                <form action="" method="post">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Username</span>
+                            <input type="text" id="username" name="username" value="{{message['username']}}" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" id="email" name="email" value="{{message['email']}}" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="text" id="password" name="password" value="{{message['password']}}" required>
+                        </div>
+
+
+                        <div class="input-box">
+                            <div class="input-box">
+                                <label for="gender" class="details">Gender</label>
+                                <div class="input-box">
+                                    <select name="gender" id="gender">
+                                        <option value="male" {% if message['gender']=='male' %}selected{% endif %}>
+                                            Male</option>
+                                        <option value="female" {% if message['gender']=='female' %}selected{% endif %}>
+                                            Female</option>
+                                        <option value="Non-binary" {% if message['gender']=='Non-binary' %}selected{%
+                                            endif %}>Non-binary</option>
+                                        <option value="Prefer not to say" {% if message['gender']=='Prefer not to say'
+                                            %}selected{% endif %}>Prefer not
+                                            to say</option>
+                                        <option value="other" {% if message['gender']=='other' %}selected{% endif %}>
+                                            Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="input-box">
+                            <label for="dob" class="details">Date of birth</label>
+                            <div>
+                                <input type="date" name="dob" id="dob" value="{{message['dob']}}">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <label for="country" class="details">Country</label>
+                            <div class="input-box">
+                                <select name="country" id="country" value="{{message['country']}}">
+                                    <option value="India">India</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="checkboxsize" type="checkbox" name="terms" id="terms" {% if message['terms']
+                                %}checked{% endif %}>
+                            <label for="terms" class="terms">Share my
+                                registration
+                                data with Spotify's content providers for marketing purposes.</label>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <div class="button">
+                            <input type="submit" value="Save profile">
+                        </div>
+                    </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    </form>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

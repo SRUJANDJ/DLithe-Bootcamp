@@ -71,6 +71,7 @@ def register():
 
     return render_template('registration.html')
 
+
 @app.route('/updateuser/<int:id>', methods=['GET','POST'])
 def updateuser(id):
     message = ''

@@ -1,0 +1,324 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-color:black;
+}
+.main{
+    
+    /* height: 120vh; */
+    display: flex;
+    background-color: black;
+    color:white;
+
+}
+.left-division{
+    width: 25%;
+}
+.left{
+    background-color: black;
+    width: 25%;
+    position: fixed;
+}
+.left-box{
+    height: 100px;
+    background-color: rgb(36, 34, 34);
+    margin: 10px;
+    border-radius: 10px;
+    padding-top: 20px;
+   
+}
+.left-last{
+    height: 580px;
+}
+.sidebar-content{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    margin-left: 20px;
+}
+.sidebar-heading{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    margin-left: 20px;
+
+}
+.sidebar-innerpage{
+    background-color: rgb(63, 65, 65);
+    border-radius: 10px;
+    padding: 15px;
+}
+.images{
+    width: 20px;
+    height: 20px;
+}
+.sidebar-names{
+    padding-left: 5px;
+}
+.spacing{
+    margin-left: 15px;
+}
+.right{
+    background-color: black;
+    width: 75%;
+    
+    
+}
+.right-top{
+    position: fixed;
+    width: 73vw;
+    background-color: rgb(36, 34, 34);
+    height: 50px;
+    margin-left: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.right-bottom{
+    background-color:rgb(36, 34, 34);
+    height: 300px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px;
+}
+.right-main{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.parts{
+    width: 150px;
+    height: 220px;
+    /* background-color: rgb(110, 109, 109); */
+    background-color: rgb(62, 61, 61);
+    border-radius: 10px;
+   
+
+}
+.right-images{
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+    margin: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: rgb(164, 169, 171);
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.login{
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    height: 24px;
+    margin-right: 20px;
+    text-align: center;
+    border-width: 0;
+    padding: 5px;
+    
+}
+.login:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.signup{
+    color: rgb(185, 180, 180);
+    margin-right: 10px;
+}
+.signup:hover{
+    color: white;
+   
+}
+.parts:hover{
+    transform: scale(1.05);
+    /* background-color: rgb(102, 51, 51); */
+    background-color: black;
+    color: black;
+}
+.para1{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.para2{
+    color: white;
+    font-size: 16px;
+    font-weight: 500    ;
+}
+
+.button{
+    width: 150px;
+    background-color: white;
+    border-radius: 10px;
+    height: 24px;
+    margin-right: 20px;
+    text-align: center;
+    border-width: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    
+    
+}
+h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.title{
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.right-heading-top{
+    position: fixed;
+    width: 73vw;
+    background-color: rgb(36, 34, 34);
+    height: 8vh;
+    margin-left: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.heading{
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 10px;
+    color: white;
+    font-variant: small-caps;
+}
+.logout{
+    margin-top: 10px;
+}
+.song-descp{
+    font-size: 15px;
+    font-weight: 300;
+}
+.artist{
+    margin-left: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.artist-pic{
+    width: 60px;
+    border-radius: 50px;
+}
+.artist-details{
+    margin-left: 10px;
+}
+.artist-name{
+    color: aliceblue;
+    font-size: 16px;
+}.artist-role{
+    font-size: 14px;
+}
+.artist:hover{
+    background-color:  rgb(51, 49, 49);
+}
+.liked-pic{
+    width: 60px;
+    border-radius: 5px;
+}
+.sidebar-items{
+    color: rgb(188, 181, 181);
+    background-color:  rgb(51, 49, 49);
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+.sidebar-items:hover{
+    background-color:  rgb(80, 77, 77);
+}
+.search-recents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-icon{
+    width: 30px;
+}
+
+.recents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recents-word{
+    color: grey;
+    font-size: 15px;
+    padding: 10px;
+}
+.spacing-division{
+    height: 70px;
+    width: 75%;
+}
+
+
+
+#options {
+    display: none;
+    text-align: center;
+    background-color: rgb(65, 67, 68);
+    width: 15%;
+    height: 100px;
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 20px  ;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    margin-top: 6px;
+    margin-right: 20px;
+    background-color: rgb(73, 74, 74);
+    border-radius: 50px;
+    width: 20px;
+    padding: 10px;
+  }
+
+  .option-btn {
+    display: block;
+    margin: 5px;
+    background-color: transparent;
+    color: rgb(166, 168, 170);
+    border: 0;
+    padding: 10px 10px 0px 10px;
+  }
+  .option-btn:hover{
+    color: rgb(191, 193, 195);
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+.header-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.recent-icon{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+}
