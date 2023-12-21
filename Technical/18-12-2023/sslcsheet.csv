@@ -1,0 +1,12 @@
+register_no,name,father_name,class,maths,science,english,kannada
+ab101,Aryan,Raj,10,80,76,89,67
+ab102,Aisha,Sameer,10,70,99,88,96
+ab103,Arjun,Vikram,10,40,50,60,87
+ab104,Neha,Anil,,20,30,40,46
+ab105,Rohan,Pradeep,10,33,64,74,
+ab106,Priya,Sanjay,10,45,55,65,
+ab107,Ravi,Sunil,,78,,,
+ab108,Ananya,Ajay,10,99,88,77,35
+ab109,Aarav,Manoj,10,100,80,90,88
+ab110,Kavya,Suresh,10,67,77,87,96
+ab111,Aditya,Ramesh,10,99,89,99,66

@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title> Registration </title>
-    <link rel="stylesheet" href="{{url_for('static',filename=('css/editprofile.css'))}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename=('css/editprofile.css'))}}">
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="back">
-
-        <p><a href="http://192.168.43.94:5001/back/{{message['id']}}"><img id="backbutton"
-                    src="{{url_for('static',filename='images/arrow-89-xl.png')}}" alt=""></a></p>
-
-    </div>
-
+    {% for message in messages %}
     <div class="main-container">
 
         <div class="container">
 
-            <div class="title">Edit Profile</div>
+            <div class="title">Edit {{message['username']}}</div>
             <div class="content">
                 <form action="" method="post">
                     <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">ID</span>
+                            <input type="text" id="userid" name="userid" value="{{message['id']}}" required>
+                        </div>
                         <div class="input-box">
                             <span class="details">Username</span>
                             <input type="text" id="username" name="username" value="{{message['username']}}" required>
@@ -34,7 +32,8 @@
                         </div>
                         <div class="input-box">
                             <span class="details">Password</span>
-                            <input type="text" id="password" name="password" value="{{message['password']}}" required readonly>
+                            <input type="text" id="password" name="password" value="{{message['password']}}" required
+                                readonly>
                         </div>
 
 
@@ -105,7 +104,7 @@
     </div>
     </div>
     </div>
-
+    {% endfor %}
 </body>
 
 </html>

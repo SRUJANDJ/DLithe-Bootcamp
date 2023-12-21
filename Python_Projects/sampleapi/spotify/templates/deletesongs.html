@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/trail.css')}}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left-division">
+
+        </div>
+        <div class="left">
+            <div class="left-box">
+                <!-- <div class="sidebar-content">
+                    <img class="images" src="./images/download.png" alt=""><span class="sidebar-names">Spotify</span>
+                </div> -->
+                <div class="sidebar-content">
+                    <a href="http://192.168.43.94:5001/back/{{message1['id']}}"><img class="images"
+                            src="{{url_for('static',filename='images/home-xxl.png')}}" alt=""><span
+                            class="sidebar-names spacing">Home</span></a>
+                </div>
+                <div class="sidebar-content">
+                    <img src="{{url_for('static',filename='images/search-12-xxl.png')}}" alt="" class="images"><span
+                        class="sidebar-names spacing">Search</span>
+                </div>
+
+            </div>
+            <div class="left-box left-last">
+                <div class="sidebar-content">
+                    <img src="{{url_for('static',filename='images/book-xl.png')}}" alt="" class="images"><span
+                        class="sidebar-heading spacing">Your
+                        Library</span>
+                </div>
+                <div class="sidebar-content">
+                    <span class="sidebar-items">Playlist</span>
+                    <span class="sidebar-items">Artist</span>
+                </div>
+                <div class="sidebar-content">
+                    <div class="search-recents">
+                        <div class="search">
+                            <img src="{{url_for('static',filename='images/seach.png')}}" alt="" class="search-icon">
+                        </div>
+                        <div class="recents">
+                            <div>
+                                <span class="recents-word">Recents</span>
+                            </div>
+                            <div class="hamburger recent-icon">
+                                &#9776;
+                            </div>
+                            <!-- <div>
+                                <img src="{{url_for('static',filename='css/trail.css')}}images/recent.png" alt=""
+                                    class="recent-icon">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="lib-content">
+                    <div class="artist">
+                        <div>
+                            <img src="{{url_for('static',filename='images/spotify_liked.jpeg')}}" alt=""
+                                class="liked-pic">
+                        </div>
+                        <div class="artist-details">
+                            <p class="artist-name">Liked Songs</p>
+                            <p class="artist-role">Playlist . 2 Songs</p>
+                        </div>
+
+                    </div>
+                    <div class="artist">
+                        <div>
+                            <img src="{{url_for('static',filename='images/alanwalker.jpeg')}}" alt=""
+                                class="artist-pic">
+                        </div>
+                        <div class="artist-details">
+                            <p class="artist-name">Alan Walker</p>
+                            <p class="artist-role">Artist</p>
+                        </div>
+
+                    </div>
+                    <div class="artist">
+                        <div>
+                            <img src="{{url_for('static',filename='images/arijit.jpeg')}}" alt="" class="artist-pic">
+                        </div>
+                        <div class="artist-details">
+                            <p class="artist-name">Arijit Singh</p>
+                            <p class="artist-role">Artist</p>
+                        </div>
+
+                    </div>
+                    <div class="artist">
+                        <div>
+                            <img src="{{url_for('static',filename='images/arman.jpg')}}" alt="" class="artist-pic">
+                        </div>
+                        <div class="artist-details">
+                            <p class="artist-name">Arman Malik</p>
+                            <p class="artist-role">Artist</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- <div class="sidebar-content">
+                    <div class="sidebar-innerpage">
+                        <p class="para1">Create your first playlist</p>
+                        <p class="para2">It's easy, we'll help you</p>
+                        <button class="button">Create Playlist</button>
+                    </div>
+
+                </div> -->
+            </div>
+            <!-- <div class="left-box left-last">
+                <div class="sidebar-content">
+                    <div class="sidebar-innerpage">
+                        <p class="para1">Lets find some Podcasts to follow</p>
+                        <p class="para2">We'll keep you updated on new episodes</p>
+                        <button class="button">Browse Podcasts</button>
+                    </div>
+
+                </div>
+            </div> -->
+
+        </div>
+        <div class="right">
+            <div class="temp">
+                <div>
+                    <img src="{{url_for('static',filename='images/lofi.jpeg')}}" alt="" class="tone">
+                </div>
+                <div class="title-heading">
+                    <h1 class="heading">Lofi beats</h1>
+                    <p class="top-para">chil beats, lofi vibes, new tracks every week.....</p>
+                </div>
+            </div>
+
+            <div class="dividing">
+                <div class="table">
+
+                    <div class="hash">
+                        <p>#</p>
+                    </div>
+                    <div class="title">
+                        <p>Title</p>
+                    </div>
+                    <div class="album">
+                        <p>Album</p>
+                    </div>
+                    <div class="date">
+                        <p>Date added</p>
+                    </div>
+                    <div class="duration">
+                        <p>Duration</p>
+                    </div>
+
+                </div>
+                <hr>
+
+                {%for item in message2%}
+                <a href="http://192.168.43.94:5001/deletesong/{{item['id']}}">
+                    <div class="table">
+
+                        <div class="hash">
+                            <p>{{item['id']}}</p>
+                        </div>
+                        <div class="title">
+                            <p>{{item['title']}}</p>
+                        </div>
+                        <div class="album">
+                            <p>{{item['album']}}</p>
+                        </div>
+                        <div class="date">
+                            <p>{{item['date_added'].lower()}}</p>
+                        </div>
+                        <div class="duration">
+                            <p>{{item['duration']}}</p>
+                        </div>
+
+                    </div>
+                </a>
+
+
+
+
+
+                {%endfor %}
+
+
+
+
+            </div>
+</body>
+
+</html>

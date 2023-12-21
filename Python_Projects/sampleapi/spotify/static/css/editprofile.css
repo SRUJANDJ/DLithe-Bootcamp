@@ -10,12 +10,14 @@ body{
     background: linear-gradient(135deg, #06090a, #080709);
 }
 .main-container{
+  margin-top: 50px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
   padding: 10px;
+  
 }
 .container{
   max-width: 700px;
@@ -187,6 +189,7 @@ form .user-details .input-box{
 .button-container{
     display: flex;
     justify-content: end;
+    
 }
 .details{
     font-size: 14px;
