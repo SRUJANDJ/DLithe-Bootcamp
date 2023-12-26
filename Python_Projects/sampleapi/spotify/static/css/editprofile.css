@@ -10,13 +10,14 @@ body{
     background: linear-gradient(135deg, #06090a, #080709);
 }
 .main-container{
-  margin-top: 50px;
-  height: 100vh;
+  margin-top: 10px;
+ /*  height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  padding: 10px;
+  padding-bottom: 10px;
+  
   
 }
 .container{
@@ -30,7 +31,7 @@ body{
 .container .title{
   font-size: 40px;
   font-weight: 700;
-  position: relative;
+  position: static;
   color: white;
 }
 /* .container .title::before{

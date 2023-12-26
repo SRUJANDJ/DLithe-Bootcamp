@@ -19,7 +19,7 @@
                     <img class="images" src="./images/download.png" alt=""><span class="sidebar-names">Spotify</span>
                 </div> -->
         <div class="sidebar-content">
-          <a href="http://192.168.43.94:5001/back/{{message1['id']}}"><img class="images"
+          <a href="http://192.168.43.94:5001/mainpage"><img class="images"
               src="{{url_for('static',filename='images/home-xxl.png')}}" alt=""><span
               class="sidebar-names spacing">Home</span></a>
         </div>
@@ -152,7 +152,7 @@
         </div>
         <hr>
 
-        {%for item in message2%}
+        {%for item in message%}
         <div class="table">
           <div class="hash">
             <p>{{loop.index}}</p>

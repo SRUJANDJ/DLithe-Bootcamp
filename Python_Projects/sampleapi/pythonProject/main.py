@@ -28,7 +28,7 @@ def login():
         password = request.form['password']
 
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute('Select * from fd where username = %s and password =%s', (username, password))
+        cursor.execute('Select * from fd where username =%s and password =%s', (username,password,))
         user = cursor.fetchone()
         if user:
             session['loggedin'] = True

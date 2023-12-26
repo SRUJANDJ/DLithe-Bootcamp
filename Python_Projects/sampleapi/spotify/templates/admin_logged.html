@@ -130,7 +130,7 @@
                 </div>
                 <div class="header-buttons">
                     <div class=" login logout">
-                        <a href="http://192.168.43.94:5001">Log out</a>
+                        <a href="http://192.168.43.94:5001/logout">Log out</a>
                     </div>
                     <div>
                         <div class="hamburger" onclick="toggleOptions()">
@@ -140,15 +140,15 @@
 
                     </div>
                     <div id="options">
-                        <button class="option-btn"
-                            onclick="window.location.href=`http://192.168.43.94:5001/editprofile/{{message['id']}}`">Edit
-                            Profile</button>
+                        <!-- <button class="option-btn"
+                            onclick="window.location.href=`http://192.168.43.94:5001/editprofils`">Edit
+                            Profile</button> -->
 
                         <button class="option-btn"
-                            onclick="window.location.href=`http://192.168.43.94:5001/addsong/{{message['id']}}`">Add
+                            onclick="window.location.href=`http://192.168.43.94:5001/addsong`">Add
                             song</button>
                         <button class="option-btn"
-                            onclick="window.location.href=`http://192.168.43.94:5001/adminsongs/1`">Delete
+                            onclick="window.location.href=`http://192.168.43.94:5001/deletesongs`">Delete
                             songs</button>
                         <button class="option-btn"
                             onclick="window.location.href=`http://192.168.43.94:5001/users`">Users
@@ -168,7 +168,7 @@
                 <h3>Made For You</h3>
                 <div class="right-main">
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/deep-focus.jpeg')}}" alt=""
@@ -182,7 +182,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/study.jpeg')}}" alt=""
@@ -196,7 +196,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/readingjpeg.jpeg')}}" alt=""
@@ -210,7 +210,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/concentratiom.jpeg')}}" alt=""
@@ -223,7 +223,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/jazz.jpeg')}}" alt=""
@@ -244,7 +244,7 @@
                 <h3>Focus</h3>
                 <div class="right-main">
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/deep-focus.jpeg')}}" alt=""
@@ -258,7 +258,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/study.jpeg')}}" alt=""
@@ -272,7 +272,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/readingjpeg.jpeg')}}" alt=""
@@ -286,7 +286,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/concentratiom.jpeg')}}" alt=""
@@ -299,7 +299,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/jazz.jpeg')}}" alt=""
@@ -320,7 +320,7 @@
                 <h3>Kannada</h3>
                 <div class="right-main">
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/deep-focus.jpeg')}}" alt=""
@@ -334,7 +334,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/study.jpeg')}}" alt=""
@@ -348,7 +348,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/readingjpeg.jpeg')}}" alt=""
@@ -362,7 +362,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/concentratiom.jpeg')}}" alt=""
@@ -375,7 +375,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/jazz.jpeg')}}" alt=""
@@ -396,7 +396,7 @@
                 <h3>Telugu</h3>
                 <div class="right-main">
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/deep-focus.jpeg')}}" alt=""
@@ -410,7 +410,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/study.jpeg')}}" alt=""
@@ -424,7 +424,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/readingjpeg.jpeg')}}" alt=""
@@ -438,7 +438,7 @@
 
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/concentratiom.jpeg')}}" alt=""
@@ -451,7 +451,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="http://192.168.43.94:5001/songs/{{message['id']}}">
+                        <a href="http://192.168.43.94:5001/songs">
                             <div class="parts">
                                 <div class="right-images">
                                     <img src="{{url_for('static',filename='images/jazz.jpeg')}}" alt=""

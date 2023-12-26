@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <div class="back">
+
+        <p><a href="http://192.168.43.94:5001/mainpage"><img id="backbutton"
+                    src="{{url_for('static',filename='images/arrow-89-xl.png')}}" alt=""></a></p>
+
+    </div>
     {% for message in messages %}
     <div class="main-container">
 
@@ -20,7 +26,7 @@
                     <div class="user-details">
                         <div class="input-box">
                             <span class="details">ID</span>
-                            <input type="text" id="userid" name="userid" value="{{message['id']}}" required>
+                            <input type="text" id="userid" name="userid" value="{{message['id']}}" required readonly>
                         </div>
                         <div class="input-box">
                             <span class="details">Username</span>
@@ -83,12 +89,13 @@
                                 registration
                                 data with Spotify's content providers for marketing purposes.</label>
                         </div>
-                    </div>
-                    <div class="button-container">
-                        <div class="button">
-                            <input type="submit" value="Save profile">
+                        <div class="button-container">
+                            <div class="button">
+                                <input type="submit" value="Save profile">
+                            </div>
                         </div>
                     </div>
+
 
 
             </div>
