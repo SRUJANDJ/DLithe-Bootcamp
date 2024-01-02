@@ -1,6 +1,6 @@
 
 import './App.css';
-import Navbar from './Components/Navbar';
+/* import Navbar from './Components/Navbar';
 import GreetWithClass from './Components/GreetWithClass';
 import Counting from './Components/Counting';
 import Count from './Components/Increment'
@@ -12,11 +12,17 @@ import Sidebar from './Components/Sidebar';
 import Task from './Components/Task';
 import Conditional from './Components/Conditional';
 import TaskTwo from './Components/TaskTwo';
+import Countdown from './Components/Countdown'; */
+import StyleByFile from './Components/StyleByFile'
+import StyleByTwo from './Components/StyleByTwo'
+import StyleByAttribute from './Components/StyleByAttribute'
+import StyleByModule from './Components/StyleByModule'
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/>
       <Sidebar/>
       <GreetWithClass age="30" />
       <Counting/>
@@ -29,6 +35,11 @@ function App() {
       <Conditional user="user" number="9" />
       <TaskTwo/>
       <Footer/>
+      <Countdown/> */}
+      <StyleByFile/>
+      <StyleByTwo/>
+      <StyleByAttribute/>
+      <StyleByModule/>
     </div>
   );
 }

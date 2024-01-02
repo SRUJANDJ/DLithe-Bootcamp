@@ -76,11 +76,6 @@ class sorting:
         print(li)
 
     def quick_sort(self):
-        if not self.list_passed:
-            print("Empty list provided.")
-            return
-
-        li = self.list_passed
 
         def partition(arr, low, high):
             i = low - 1
