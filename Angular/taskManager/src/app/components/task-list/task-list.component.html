@@ -1,0 +1,23 @@
+<div class="main-container">
+    <h1>ToDo List</h1>
+    <!-- <div class="user-input">
+        <input type="text" [(ngModel)]="data" /><button (click)="addTask(data)">Add</button>
+    </div> -->
+
+    <div class="list-container">
+        <div class="list-items">
+            <div *ngFor="let item of singleUserLists;index as i">
+                <div class="list-data">
+                    <div>
+                        <span>{{item}}</span>
+                    </div>
+                    <div>
+                        <button (click)="removeOperation(i)">Done</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<h1>patience</h1>

@@ -1,0 +1,16 @@
+.dataContainer{
+    display: flex;
+    justify-content: start;
+    margin-left: 2%;
+    
+    
+}
+.dataHolderOne{
+    width: 10%;
+}
+.dataHolderTwo{
+    width: 30%;
+}
+.dataHolderThree{
+    width: 50%;
+}

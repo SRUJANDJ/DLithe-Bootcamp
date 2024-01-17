@@ -1,0 +1,42 @@
+.mainContainer{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color: rgb(89, 130, 234);
+    padding: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    margin-bottom: 5%;
+}
+input{
+    height: 20px;
+    width: 60%;
+}
+button{
+    background-color: rgb(94, 237, 111);
+    padding: 10px;
+    border-width: 0;
+    border-radius: 10px;
+    width: 100px;
+    font-weight: 700;
+    font-size: 14px;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: rgb(110, 235, 125);
+}
+.genderStyle{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}

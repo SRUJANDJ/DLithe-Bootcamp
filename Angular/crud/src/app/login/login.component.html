@@ -1,0 +1,19 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+
+
+    <div>
+        <label for="">Email: </label>
+        <input type="email" id="email" formControlName="email">
+    </div>
+
+
+    <div>
+        <label for="">Password:</label>
+        <input type="password" id="password" formControlName="password">
+    </div>
+
+    <div>
+        <button *ngIf="myForm.valid" type="submit">SignUp</button>
+    </div>
+
+</form>

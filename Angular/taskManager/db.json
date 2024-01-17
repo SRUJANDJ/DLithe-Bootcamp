@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "firstName": "srujan",
+      "secondName": "DJ",
+      "email": "srujandj@gmail.com",
+      "gender": "male",
+      "dob": "10/03/2001",
+      "password": "srujandj",
+      "id": "f1e4"
+    },
+    {
+      "id": "d619",
+      "firstName": "user",
+      "lastName": "name",
+      "email": "user@gmail.com",
+      "password": "username",
+      "gender": "female",
+      "dob": "2010-02-11"
+    }
+  ],
+  "tasks": [
+    {
+      "email": "srujandj@gmail.com",
+      "tasklist": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ]
+    },
+    {
+      "id": "c01b",
+      "email": "user@gmail.com",
+      "tasklist": [
+        "five",
+        "two",
+        "three",
+        "four",
+        "six"
+      ]
+    }
+  ]
+}

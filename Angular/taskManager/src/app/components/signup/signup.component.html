@@ -1,0 +1,44 @@
+<div class="mainContainer">
+    <form [formGroup]="mySignUpForm" (ngSubmit)="onSubmit()">
+        <div class="container">
+            <label for="firstName">FirstName</label>
+            <input type="text" formControlName="firstName" />
+        </div>
+        <div class="container">
+            <label for="lastName">LastName</label>
+            <input type="text" formControlName="lastName" />
+        </div>
+        <div class="container">
+            <label for="email">Email</label>
+            <input type="text" formControlName="email" />
+        </div>
+        <div class="container">
+            <label for="gender">Gender</label>
+            <div class="genderStyle">
+                <div>
+                    <label for="gender">male</label>
+                    <input type="radio" formControlName="gender" value="male" />
+                </div>
+                <div>
+                    <label for="gender">female</label>
+                    <input type="radio" formControlName="gender" value="female" />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <label for="dob">DOB</label>
+            <input type="date" formControlName="dob" />
+        </div>
+        <div class="container">
+            <label for="password">Password</label>
+            <input type="text" formControlName="password" />
+        </div>
+        <div class="container">
+            <button *ngIf="mySignUpForm.valid" type="submit">Signup</button>
+        </div>
+        <div>
+            <p>{{message}}</p>
+            <button *ngIf="message" (click)="redirectLogin()">LoginPage</button>
+        </div>
+    </form>
+</div>

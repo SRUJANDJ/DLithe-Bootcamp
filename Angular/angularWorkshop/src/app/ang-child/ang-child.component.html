@@ -1,0 +1,9 @@
+<div class="container">
+    <div *ngFor="let itm of items">
+        <div *ngIf="parentData == itm.name">
+            <h2>{{itm.name}}</h2>
+            <h2>{{itm.price}}</h2>
+            <button (click)="buying(itm.name)">Buy {{parentData}}</button>
+        </div>
+    </div>
+</div>

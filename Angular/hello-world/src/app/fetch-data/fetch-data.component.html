@@ -1,0 +1,36 @@
+<div>
+    <button (click)="goBack()">Back</button>
+</div>
+<div class="dataContainer">
+    <div class="dataHolderOne">
+        <h1>User Id</h1>
+    </div>
+    <div class="dataHolderOne">
+        <h1>Id</h1>
+    </div>
+    <div class="dataHolderTwo">
+        <h1>Title</h1>
+    </div>
+    <div class="dataHolderThree">
+        <h1>Body</h1>
+    </div>
+</div>
+<div *ngFor="let detail of details">
+    <div class="dataContainer">
+        <div class="dataHolderOne">
+            <p>{{detail.userId}}</p>
+        </div>
+        <div class="dataHolderOne">
+            <p>{{detail.id}}</p>
+        </div>
+        <div class="dataHolderTwo">
+            <p>{{detail.title}}</p>
+        </div>
+        <div class="dataHolderThree">
+            <p>{{detail.body}}</p>
+        </div>
+    </div>
+    <hr />
+
+
+</div>

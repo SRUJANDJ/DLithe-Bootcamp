@@ -1,0 +1,15 @@
+<!-- <form #myForm="ngForm" (ngSubmit)="submitted(myForm)">
+    <input type="text" name="title" ngModel required />
+    <input type="text" name="body" ngModel required />
+    <button type="submit">Submit</button>
+</form> -->
+<h1> {{ 'srujna'| add:'DJ' }}</h1>
+<p appColorchange>this is a para1</p>
+<p appColorchange="blue">this is para</p>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="title">
+    <input type="text" formControlName="body">
+    <button *ngIf="myForm.valid" type="submit">SUBMIT</button>
+</form>
+<p>form works!</p>
+<button (click)="display()">Display</button>

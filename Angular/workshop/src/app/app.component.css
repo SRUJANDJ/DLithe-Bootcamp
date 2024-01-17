@@ -1,0 +1,37 @@
+.container{
+    background-color: rgb(210, 228, 239);
+    padding: 20px;
+    height: 100vh;
+}
+h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+.listContainer{
+    background-color: rgb(184, 217, 246);
+    padding: 10px;
+    border-radius: 10px;
+    width: 20%;
+}
+p{
+    font-size: 20px;
+    font-weight: 600;
+}
+li{
+    margin-bottom: 5px;
+}
+.box{
+    width: 120px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 10px;
+    
+}
+button{
+    background-color: green;
+    border-width: 0;
+    border-radius: 5px;
+    color:white;
+    padding: 10px;
+    margin: 20px;
+}

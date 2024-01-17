@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "firstName": "Shridhar",
+      "lastName": "Bhat",
+      "email": "bshridhar27@gmail.com",
+      "gender": "male",
+      "dob": "1997/07/27",
+      "password": "bhat",
+      "id": "56bc"
+    },
+    {
+      "id": "805f",
+      "firstName": "var",
+      "lastName": "mg",
+      "email": "var@gmail.com",
+      "gender": "female",
+      "dob": "12/04/2023",
+      "password": "var123"
+    },
+    {
+      "id": "afe1",
+      "firstName": "karthik",
+      "lastName": "bhat",
+      "email": "karthik@gmail.com",
+      "gender": "male",
+      "dob": "2024-01-05",
+      "password": "karthik123"
+    },
+    {
+      "id": "f3a3",
+      "firstName": "xyz",
+      "lastName": "bhat",
+      "email": "xy@gmail.com",
+      "gender": "male",
+      "dob": "2024-01-04",
+      "password": "xy12345"
+    },
+    {
+      "id": "9a8b",
+      "firstName": "tester",
+      "lastName": "test",
+      "email": "tester@gmail.com",
+      "gender": "male",
+      "dob": "2001-03-10",
+      "password": "tester"
+    }
+  ],
+  "details": [
+    {
+      "email": "bshridhar27@gmail.com",
+      "list": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ]
+    },
+    {
+      "email": "var@gmail.com",
+      "list": [
+        "six",
+        "seven",
+        "ten"
+      ]
+    },
+    {
+      "email": "varsha@gmail.com",
+      "list": [
+        "six",
+        "eleven",
+        "ten"
+      ]
+    }
+  ]
+}
