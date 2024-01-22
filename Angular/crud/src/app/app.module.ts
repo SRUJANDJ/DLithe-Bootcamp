@@ -9,6 +9,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserpageComponent } from './userpage/userpage.component';
+import { FormsModule } from '@angular/forms';
+import { AdminComponent } from './admin/admin.component';
+import { PersonalDetailsComponent } from './personal-details/personal-details.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,16 @@ import { UserpageComponent } from './userpage/userpage.component';
     SignupComponent,
     PagenotfoundComponent,
     LoginComponent,
-    UserpageComponent
+    UserpageComponent,
+    AdminComponent,
+    PersonalDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -38,9 +38,13 @@ export class LoginComponent implements OnInit {
       if(data.email===this.myForm.value['email']){
         user=true;
         if(data.password === this.myForm.value['password']){
-          this.dataService.getDetails(this.myForm.value['email'])
+          this.dataService.getDetails(this.myForm.value['email'],data.id)
           console.log("successfully logged in");
-          this.router.navigateByUrl('userpage')
+          this.dataService.loginFromForm()
+          if(this.myForm.value['email']==='admin@gmail.com')
+            this.router.navigateByUrl('/admin');
+          else  
+          this.router.navigateByUrl('/userpage');
         }
         else{
           console.log("Wrong password");

@@ -1,0 +1,25 @@
+.container{
+    height: 70vh;
+}
+
+.myForm{
+    border-radius: 10px;
+    width: 35%;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(59, 130, 244);
+}
+.loginButton{
+    border-width: 0;
+    border-radius: 10px;
+    width: 100px;
+    padding: 5px;
+    font-weight: 400;
+}
+.loginButton:hover{
+    transform: scale(1.05);
+}
+input:hover{
+    border-color: rgb(95, 92, 92);
+    cursor: pointer;
+}

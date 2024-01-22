@@ -1,19 +1,26 @@
-<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+<div class="container">
+    <div class="d-flex flex-row justify-content-center align-items-center h-100 ">
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="myForm p-5 text-white">
 
 
-    <div>
-        <label for="">Email: </label>
-        <input type="email" id="email" formControlName="email">
+            <div class="w-100">
+                <div class="d-flex flex-row justify-content-between mb-5">
+                    <label for="">Email </label>
+                    <input type=" email" id="email" formControlName="email">
+                </div>
+
+
+                <div class="d-flex flex-row justify-content-between mb-5">
+                    <label for="">Password</label>
+                    <input type="password" id="password" formControlName="password">
+                </div>
+
+                <div class="d-flex flex-row justify-content-end mb-2">
+                    <button *ngIf="myForm.valid" type="submit" class="loginButton">Login</button>
+                </div>
+
+            </div>
+
+        </form>
     </div>
-
-
-    <div>
-        <label for="">Password:</label>
-        <input type="password" id="password" formControlName="password">
-    </div>
-
-    <div>
-        <button *ngIf="myForm.valid" type="submit">SignUp</button>
-    </div>
-
-</form>
+</div>

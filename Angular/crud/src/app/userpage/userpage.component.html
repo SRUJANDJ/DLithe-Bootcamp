@@ -1,7 +1,60 @@
-<h1>Welcome to Home Page</h1>
+<!-- <h1>Welcome to Home Page</h1>
 
-<div *ngFor="let detail of userDetails[0].list">
-    <h1>{{detail}}</h1>
+<div *ngIf="userDetails">
+    <div *ngFor="let detail of userDetails[0].list">
+        <h1>{{detail}}</h1>
 
+
+    </div> 
+</div> -->
+<!-- <p>Welcome to HOME PAGE</p> -->
+
+
+<div class="topBar d-flex flex-row justify-content-between ">
+    <div>
+        <h1>TODO LIST</h1>
+    </div>
+    <div>
+        <button type="submit" (click)="addData()">Add Data</button>
+        <button type="submit" (click)="loadingPersonalDetails()">Details</button>
+        <button *ngIf="buttonStatus" type="submit" (click)="rollBack()">Back</button>
+        <button *ngIf="!buttonStatus" type="submit" (click)="logout()">Logout</button>
+    </div>
+</div>
+<div *ngIf="clicked" class="addData d-flex flex-row justify-content-center mt-5 w-100">
+    <input type="text" name="task" [(ngModel)]="assign" class="dataBar">
+    <button (click)="onClick()" type="submit" class="dataButton">Add</button>
+    <hr>
+</div>
+<div class="mt-3 d-flex flex-column justify-content-center">
+    <div *ngIf="userDetails && userDetails.length > 0">
+        <div *ngFor="let details of userDetails[0]?.list;let i=index">
+            <div class="container w-50">
+                <p>{{details}}</p>
+                <div *ngIf="details">
+                    <div>
+                        <button type="submit" (click)="updateDisplay(i,details)"
+                            class="dataButton bg-success text-white">Update</button>
+                    </div>
+                    <div>
+                        <button type="submit" (click)="deleteItem(i)"
+                            class="dataButton bg-danger text-white">Done</button>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="display && i === displayIndex" class="addData d-flex justify-content-center">
+                <input type="text" [(ngModel)]="updatingItem" class="updateData" />
+                <button type="submit" (click)="updateItem()"
+                    class="dataButton mt-4 bg-secondary text-white">submit</button>
+            </div>
+
+            <div class="w-75 m-auto">
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex flex-row justify-content-end">
+    <button type="submit" (click)="deleteAccount()" class="dataButton" id="deleteButton">Delete Account</button>
 
 </div>

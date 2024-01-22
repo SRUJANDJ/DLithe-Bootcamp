@@ -1,6 +1,16 @@
 .container{
     height: 90vh;
 }
+button{
+    background-color: white;
+    border-radius: 10px;
+    border-width: 0;
+    color: black;
+    width: 100px;
+    font-size: 16px;
+    height: 35px;
+    margin-top: 5px;
+}
 
 .myForm{
     border-radius: 10px;
@@ -17,7 +27,7 @@
     font-weight: 400;
     font-size: 16px;
 }
-.signUpButton:hover{
+button:hover{
     transform: scale(1.05);
 }
 .date{
@@ -29,4 +39,11 @@ input:hover{
     border-color: rgb(95, 92, 92);
     cursor: pointer;
     
+}
+.topBar{
+    height: 60px;
+    background-color: rgb(50, 49, 50);
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
 }

@@ -9,7 +9,14 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  myUrl='http://localhost:3000/users';
+
+  myUrl='http://localhost:3000/users'
+  myUrlDetails='http://localhost:3000/details'
+  myUserDetails={
+    email:'',
+    list:[]
+  };
+
   public usersData:any;
 
   myObj={
@@ -55,12 +62,13 @@ export class SignupComponent implements OnInit {
     }
     if(!user){
       this.dataService.postData(this.myUrl,this.myForm.value).subscribe();
-      alert("Record Added Successfully")
-      this.router.navigateByUrl('/login')
-      
-  
-      
+      this.myUserDetails.email=this.myForm.value['email'];
+      this.dataService.postData(this.myUrlDetails,this.myUserDetails).subscribe();
+      alert("Record Added Successfully");
+
     }
+
+    this.router.navigateByUrl('/login');
  
     
   }

@@ -1,0 +1,22 @@
+<div class="topBar d-flex flex-row justify-content-end ">
+    <button type="submit" (click)="logout()">Logout</button>
+</div>
+
+<div *ngFor="let detail of usersData;let i=index">
+    <div class="container ">
+        <div>
+            <p>{{detail.email}}</p>
+        </div>
+        <div>
+            <button type="submit" (click)="viewUser(detail.email,detail.id)" class="viewList">View
+                list</button>
+            <button type="submit" (click)="viewDetails(detail.email,detail.id)" class="viewDetail">View
+                user</button>
+
+        </div>
+
+    </div>
+    <div class="w-75 m-auto">
+        <hr>
+    </div>
+</div>

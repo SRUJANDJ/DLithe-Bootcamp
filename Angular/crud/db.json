@@ -1,75 +1,79 @@
 {
   "users": [
     {
-      "firstName": "Shridhar",
-      "lastName": "Bhat",
-      "email": "bshridhar27@gmail.com",
+      "id": "0599",
+      "firstName": "admin",
+      "lastName": "main",
+      "email": "admin@gmail.com",
       "gender": "male",
-      "dob": "1997/07/27",
-      "password": "bhat",
-      "id": "56bc"
+      "dob": "2024-01-17",
+      "password": "admin"
     },
     {
-      "id": "805f",
-      "firstName": "var",
-      "lastName": "mg",
-      "email": "var@gmail.com",
+      "id": "ca78",
+      "firstName": "varsha",
+      "lastName": "m",
+      "email": "varsha@gmail.com",
       "gender": "female",
-      "dob": "12/04/2023",
-      "password": "var123"
+      "dob": "2024-01-18",
+      "password": "varsha@gmail.com"
     },
     {
-      "id": "afe1",
-      "firstName": "karthik",
+      "id": "29e4",
+      "firstName": "shri shri",
       "lastName": "bhat",
-      "email": "karthik@gmail.com",
+      "email": "shri@gmail.com",
       "gender": "male",
-      "dob": "2024-01-05",
-      "password": "karthik123"
+      "dob": "2024-01-10",
+      "password": "shri@gmail.com"
     },
     {
-      "id": "f3a3",
-      "firstName": "xyz",
-      "lastName": "bhat",
-      "email": "xy@gmail.com",
-      "gender": "male",
-      "dob": "2024-01-04",
-      "password": "xy12345"
-    },
-    {
-      "id": "9a8b",
-      "firstName": "tester",
-      "lastName": "test",
-      "email": "tester@gmail.com",
+      "id": "4b9d",
+      "firstName": "Srujan DJ",
+      "lastName": "dj",
+      "email": "srujan@gmail.com",
       "gender": "male",
       "dob": "2001-03-10",
-      "password": "tester"
+      "password": "srujan@gmail.com"
     }
   ],
   "details": [
     {
-      "email": "bshridhar27@gmail.com",
+      "id": "3ae1",
+      "email": "admin@gmail.com",
+      "list": []
+    },
+    {
+      "id": "2720",
+      "email": "shri@gmail.com",
       "list": [
         "one",
         "two",
         "three",
-        "four"
+        "four",
+        "five",
+        "six"
       ]
     },
     {
-      "email": "var@gmail.com",
-      "list": [
-        "six",
-        "seven",
-        "ten"
-      ]
-    },
-    {
+      "id": "9a43",
       "email": "varsha@gmail.com",
       "list": [
-        "six",
-        "eleven",
-        "ten"
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g"
+      ]
+    },
+    {
+      "id": "f8c1",
+      "email": "srujan@gmail.com",
+      "list": [
+        "Get operation",
+        "Put operation",
+        "Delete operation"
       ]
     }
   ]

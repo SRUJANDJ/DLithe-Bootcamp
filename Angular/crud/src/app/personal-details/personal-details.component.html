@@ -1,6 +1,10 @@
+<div class="topBar d-flex flex-row justify-content-start ">
+    <button *ngIf="buttonStatus" type="submit" (click)="goToAdminPage()">Back</button>
+    <button *ngIf="!buttonStatus" type="submit" (click)="goTOUserPage()">Back</button>
+</div>
 <div class="container">
     <div class="d-flex flex-row justify-content-center align-items-center h-100 ">
-        <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="myForm p-5 text-white">
+        <form [formGroup]="myForm" (ngSubmit)="onClick()" class="myForm p-5 text-white">
 
             <div class="w-100">
                 <div class="d-flex flex-row justify-content-between mb-4">
@@ -15,24 +19,25 @@
 
                 <div class="d-flex flex-row justify-content-between mb-4">
                     <label for="">Email </label>
-                    <input type="email" id="email" formControlName="email">
+                    <input type="email" id="email" formControlName="email" readonly>
                 </div>
 
                 <div class="d-flex flex-row justify-content-between mb-4">
-                    <div>
-                        <label for="">Gender</label>
-                    </div>
+                    <label for="">Gender</label>
                     <div class="d-flex flex-row justify-content-evenly w-50 fs-6">
                         <div>
                             <label for="">Male &nbsp;</label>
-                            <input type="radio" id="male" value="male" formControlName="gender">
+                            <input type="radio" id="male" [checked]="userDetails[0].gender=='male'" value="male"
+                                formControlName="gender">
                         </div>
 
                         <div>
                             <label for="">Female &nbsp;</label>
-                            <input type="radio" id="female" value="female" formControlName="gender">
+                            <input type="radio" id="female" [checked]="userDetails[0].gender=='female'" value="female"
+                                formControlName="gender">
                         </div>
                     </div>
+
                 </div>
 
                 <div class="d-flex flex-row justify-content-between mb-4">
@@ -45,11 +50,10 @@
                     <input type="password" id="password" formControlName="password">
                 </div>
 
-                <div class="d-flex flex-row justify-content-end mb-3">
-                    <button *ngIf="myForm.valid" type="submit" class="signUpButton">SignUp</button>
+                <div class="d-flex flex-row justify-content-end mb-4">
+                    <button type="submit" class="signUpButton">Update</button>
                 </div>
             </div>
-
 
         </form>
     </div>
