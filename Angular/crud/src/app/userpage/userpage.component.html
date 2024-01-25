@@ -32,13 +32,15 @@
             <div class="container w-50">
                 <p>{{details}}</p>
                 <div *ngIf="details">
-                    <div>
-                        <button type="submit" (click)="updateDisplay(i,details)"
-                            class="dataButton bg-success text-white">Update</button>
-                    </div>
-                    <div>
-                        <button type="submit" (click)="deleteItem(i)"
-                            class="dataButton bg-danger text-white">Done</button>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <button type="submit" (click)="updateDisplay(i,details)"><i
+                                    class="fas fa-edit"></i></button>
+                        </div>
+                        <div>
+                            <button type="submit" (click)="deleteItem(i)" class="text-dark"><i
+                                    class="fas fa-check"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>

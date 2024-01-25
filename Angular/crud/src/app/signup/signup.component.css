@@ -7,7 +7,7 @@
     width: 45%;
     font-size: 18px;
     font-weight: 600;
-    background-color: rgb(59, 130, 244);
+    background:linear-gradient(to right,rgb(4, 20, 146),rgb(9, 35, 228))
 }
 .signUpButton{
     border-width: 0;
@@ -26,7 +26,19 @@
     height: 30px;
 }
 input:hover{
-    border-color: rgb(95, 92, 92);
+    border-color: rgb(176, 183, 184);
     cursor: pointer;
     
 }
+
+p{
+    font-size: 10px;
+}
+span{
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+

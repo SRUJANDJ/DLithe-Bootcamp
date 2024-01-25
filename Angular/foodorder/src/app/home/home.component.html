@@ -1,0 +1,23 @@
+<div class="mainContainer">
+    <div class="d-flex flex-row justify-content-center flex-wrap">
+        <div *ngFor="let i of  restaurentList">
+
+            <div class="container" (click)="loadOrders()">
+                <div class="imageContainer">
+                    <img class="imageItem " [src]="i.image" alt="">
+                </div>
+                <div>
+                    <div class="nameRating d-flex justify-content-between p-1 ">
+                        <p>{{i.name}}</p>
+                        <p>{{i.rating}}</p>
+                    </div>
+                    <div class="p-1 ">
+                        <p>{{i.tags}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

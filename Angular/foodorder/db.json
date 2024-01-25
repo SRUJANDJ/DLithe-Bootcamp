@@ -1,0 +1,207 @@
+{
+    "food":[
+        {
+            "image":"https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGluZGlhbiUyMGZvb2QlMjBkb3NhfGVufDB8fDB8fHww",
+            "name":"Dosa",
+            "category":"V",
+            "rating":"5",
+            "restaurent":"Tomazo",
+            "price":110,
+            "tags":["veg","breakfast","south indian"]
+
+        },
+        {
+            "image":"https://media.istockphoto.com/id/1305451864/photo/biryani.webp?b=1&s=170667a&w=0&k=20&c=Fp3oADBQnW0qSJ94qKDCf2W-_kTVd3vN_a7TnNnK4BQ=",
+            "name":"Biryani",
+            "category":"N",
+            "rating":"5",
+            "restaurent":"Tomazo",
+            "price":310,
+            "tags":["Non veg","Chicken","mutton","Hydrabadi"]
+        },
+        {
+            "image":"https://media.istockphoto.com/id/1620129740/photo/selective-focus-of-south-indian-famous-food-idli-vada-with-sambar-and-chatney.webp?b=1&s=170667a&w=0&k=20&c=dG6E_8AXmpF_YnetSOFBfu3kXrR9hChwyUY5uJYcrRI=",
+            "name":"Idli",
+            "category":"V",
+            "rating":"5",
+            "restaurent":"Tomazo",
+            "price":70,
+            "tags":["veg","breakfast","south indian"]
+        },
+        {
+            "image":"https://media.istockphoto.com/id/1620130768/photo/selective-focus-of-south-indian-famous-food-medu-vada-with-sambar-and-coconut-chatney.webp?b=1&s=170667a&w=0&k=20&c=hwhLIUwXuSxTNql6GzcgdLgmlcPuMjrhqsqv1yznWnY=",
+            "name":"Vada",
+            "category":"V",
+            "rating":"5",
+            "restaurent":"Tomazo",
+            "price":90,
+            "tags":["veg","breakfast","south indian"]
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww",
+            "name":"Burger",
+            "category":"N",
+            "rating":"5",
+            "restaurent":"Tomazo",
+            "price":250,
+            "tags":["Non veg","snack","fast food"]
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1613564834361-9436948817d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBpenphfGVufDB8fDB8fHww",
+            "name":"Pizza",
+            "category":"N",
+            "rating":"5",
+            "restaurent":"Tomazo",
+            "price":250,
+            "tags":["Non veg","snack","fast food"]
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFzdGF8ZW58MHx8MHx8fDA%3D",
+            "name":"Pasta",
+            "category":"V",
+            "rating":"5",
+            "restaurent":"Tomazo",
+            "price":270,
+            "tags":["veg","light","snack"]
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1619096252214-ef06c45683e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFNhbmR3aWNofGVufDB8fDB8fHww",
+            "name":"Sandwich",
+            "category":"V",
+            "rating":"5",
+            "restaurent":"Tomazo",
+            "price":180,
+            "tags":["veg","breakfast","snack"]
+        },
+        {
+            "image":"https://media.istockphoto.com/id/995903748/photo/smoked-and-spicy-tandoori-chicken-grilling-with-smoke.webp?b=1&s=170667a&w=0&k=20&c=wyaTWsExaPhEP4ZllfeWWx1O2FRH9kqmWetq25u3oy0=",
+            "name":"Grill",
+            "category":"N",
+            "rating":"5",
+            "restaurent":"Tomazo",
+            "price":320,
+            "tags":["Non veg","Chicken","grilled"]
+        },
+        {
+            "image":"https://media.istockphoto.com/id/888366454/photo/chicken-wrap.webp?b=1&s=170667a&w=0&k=20&c=z7J-1rgr3Uth63YSqqA-aUyVRODTRikevtl5c9Uw7jQ=",
+            "name":"Rolls",
+            "category":"N",
+            "rating":"5",
+            "restaurent":"Tomazo",
+            "price":150,
+            "tags":["Non veg","snack","fast food"]
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bm9vZGxlc3xlbnwwfHwwfHx8MA%3D%3D",
+            "name":"Noodles",
+            "category":"V",
+            "rating":"5",
+            "restaurent":"Tomazo",
+            "price":120,
+            "tags":["veg","breakfast","snack"]
+        }
+    ],
+    "restaurent":[
+        {
+            "image":"https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lYWx8ZW58MHx8MHx8fDA%3D",
+            "name":"Tomazo",
+            "tags":["south indian","Non veg","veg","snack","fast food","Chicken"],
+            "rating":5,
+            "address":"Kormangala 5th Block, Banglore"
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lYWx8ZW58MHx8MHx8fDA%3D",
+            "name":"Tomazo",
+            "tags":["south indian","Non veg","veg","snack","fast food","Chicken"],
+            "rating":5,
+            "address":"Kormangala 5th Block, Banglore"
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lYWx8ZW58MHx8MHx8fDA%3D",
+            "name":"Tomazo",
+            "tags":["south indian","Non veg","veg","snack","fast food","Chicken"],
+            "rating":5,
+            "address":"Kormangala 5th Block, Banglore"
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lYWx8ZW58MHx8MHx8fDA%3D",
+            "name":"Tomazo",
+            "tags":["south indian","Non veg","veg","snack","fast food","Chicken"],
+            "rating":5,
+            "address":"Kormangala 5th Block, Banglore"
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lYWx8ZW58MHx8MHx8fDA%3D",
+            "name":"Tomazo",
+            "tags":["south indian","Non veg","veg","snack","fast food","Chicken"],
+            "rating":5,
+            "address":"Kormangala 5th Block, Banglore"
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lYWx8ZW58MHx8MHx8fDA%3D",
+            "name":"Tomazo",
+            "tags":["south indian","Non veg","veg","snack","fast food","Chicken"],
+            "rating":5,
+            "address":"Kormangala 5th Block, Banglore"
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lYWx8ZW58MHx8MHx8fDA%3D",
+            "name":"Tomazo",
+            "tags":["south indian","Non veg","veg","snack","fast food","Chicken"],
+            "rating":5,
+            "address":"Kormangala 5th Block, Banglore"
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lYWx8ZW58MHx8MHx8fDA%3D",
+            "name":"Tomazo",
+            "tags":["south indian","Non veg","veg","snack","fast food","Chicken"],
+            "rating":5,
+            "address":"Kormangala 5th Block, Banglore"
+        },
+        {
+            "image":"https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lYWx8ZW58MHx8MHx8fDA%3D",
+            "name":"Tomazo",
+            "tags":["south indian","Non veg","veg","snack","fast food","Chicken"],
+            "rating":5,
+            "address":"Kormangala 5th Block, Banglore"
+        }
+    ],
+    "cart":[
+        {
+            "email":"srujan@gmail.com",
+            "foodName":"Dosa",
+            "category":"V",
+            "price":110,
+            "quantity":1
+
+        },
+        {
+            "email":"srujan@gmail.com",
+            "foodName":"Biryani",
+            "category":"N",
+            "price":310,
+            "quantity":1
+
+        },
+        {
+            "email":"srujan@gmail.com",
+            "foodName":"Idli",
+            "category":"V",
+            "price":70,
+            "quantity":1
+
+        },
+        {
+            "email":"next@gmail.com",
+            "foodName":"Idli",
+            "category":"V",
+            "price":70,
+            "quantity":1
+
+        }
+    ]
+}
+
+
+
+

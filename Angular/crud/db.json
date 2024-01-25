@@ -35,6 +35,15 @@
       "gender": "male",
       "dob": "2001-03-10",
       "password": "srujan@gmail.com"
+    },
+    {
+      "id": "dfd7",
+      "firstName": "USER",
+      "lastName": "main",
+      "email": "user@gmail.com",
+      "gender": "male",
+      "dob": "2024-01-03",
+      "password": "user@gmail.com"
     }
   ],
   "details": [
@@ -68,12 +77,20 @@
       ]
     },
     {
-      "id": "f8c1",
+      "id": "264f",
       "email": "srujan@gmail.com",
       "list": [
         "Get operation",
         "Put operation",
         "Delete operation"
+      ]
+    },
+    {
+      "id": "520e",
+      "email": "user@gmail.com",
+      "list": [
+        "Implement it",
+        "build an app"
       ]
     }
   ]

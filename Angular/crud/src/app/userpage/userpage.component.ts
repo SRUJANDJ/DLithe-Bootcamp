@@ -1,7 +1,6 @@
 import { Component, OnInit ,OnChanges, SimpleChanges} from '@angular/core';
 import { DataService } from '../services/data.service';
-import { on } from 'events';
-import { log } from 'console';
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -158,5 +157,6 @@ export class UserpageComponent implements OnInit {
     else
       this.clicked=false
   }
+  
 
 }

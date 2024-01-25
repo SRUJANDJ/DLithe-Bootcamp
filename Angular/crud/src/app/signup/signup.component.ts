@@ -19,14 +19,14 @@ export class SignupComponent implements OnInit {
 
   public usersData:any;
 
-  myObj={
-    firstName: 'var',
-    lastName: 'mg',
+  /* myObj={
+    firstName: '',
+    lastName: '',
     email: 'var@gmail.com',
-    gender: 'female',
-    dob: '12/04/2023',
+    gender: '',
+    dob: '',
     password: 'var123'
-  }
+  } */
   
   // form is of type reactive-forms
   myForm!:FormGroup;
@@ -71,6 +71,9 @@ export class SignupComponent implements OnInit {
     this.router.navigateByUrl('/login');
  
     
+  }
+  loadLogin(){
+    this.router.navigateByUrl('login')
   }
 
 }

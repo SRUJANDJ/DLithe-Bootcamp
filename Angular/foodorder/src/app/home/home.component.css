@@ -1,0 +1,32 @@
+.mainContainer{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(244, 242, 242);
+}
+
+.container{
+    width: 25vw;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    /* box-shadow: 10px 10px 5px grey; */
+    
+
+}
+.container:hover{
+    background-color: white;
+}
+/* .imageContainer{
+    width: 200px;
+    border-radius: 10px;
+} */
+.imageItem{
+    width: 100%;
+    
+    border-radius: 10px;
+}
+.nameRating{
+    height: 25px;
+}

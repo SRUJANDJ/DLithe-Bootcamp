@@ -15,8 +15,13 @@
                     <input type="password" id="password" formControlName="password">
                 </div>
 
-                <div class="d-flex flex-row justify-content-end mb-2">
+
+                <div class="d-flex flex-row justify-content-end mb-1">
                     <button *ngIf="myForm.valid" type="submit" class="loginButton">Login</button>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <p>Don't have account?<span class="mySpan" (click)="loadSignup()">signup</span>
+                    </p>
                 </div>
 
             </div>
