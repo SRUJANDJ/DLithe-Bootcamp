@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { Router } from '@angular/router';
-import { FormBuilder,FormControlName,FormGroup,Validators } from '@angular/forms';
+import { UntypedFormBuilder,FormControlName,UntypedFormGroup,Validators } from '@angular/forms';
 
 
 
@@ -12,7 +12,7 @@ import { FormBuilder,FormControlName,FormGroup,Validators } from '@angular/forms
 })
 export class PersonalDetailsComponent implements OnInit {
   
-  myForm!:FormGroup
+  myForm!:UntypedFormGroup
   updatingItem='';
   id:any;
   email:any;
@@ -31,7 +31,7 @@ export class PersonalDetailsComponent implements OnInit {
   
   userDetails:any={};
 
-  constructor(private fb:FormBuilder,private router:Router,private dataService:DataService) { 
+  constructor(private fb:UntypedFormBuilder,private router:Router,private dataService:DataService) { 
     
   }
 

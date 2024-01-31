@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder,FormControlName,FormGroup,Validators } from '@angular/forms';
+import { UntypedFormBuilder,FormControlName,UntypedFormGroup,Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { DataService } from '../services/data.service';
 
@@ -13,10 +13,10 @@ export class LoginComponent implements OnInit {
   usersData:any;
 
    // form is of type reactive-forms
-   myForm!:FormGroup;
+   myForm!:UntypedFormGroup;
 
 
-  constructor(private fb:FormBuilder,private router:Router,private dataService:DataService) {
+  constructor(private fb:UntypedFormBuilder,private router:Router,private dataService:DataService) {
     this.myForm=this.fb.group({
       email:['',Validators.email],
       password:['',Validators.required]

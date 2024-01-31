@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder,FormControlName,FormGroup,Validators } from '@angular/forms';
+import { UntypedFormBuilder,FormControlName,UntypedFormGroup,Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { DataService } from '../services/data.service';
 
@@ -29,10 +29,10 @@ export class SignupComponent implements OnInit {
   } */
   
   // form is of type reactive-forms
-  myForm!:FormGroup;
+  myForm!:UntypedFormGroup;
 
   // form initialization and giving validations
-  constructor(private fb:FormBuilder,private router:Router,private dataService:DataService) { 
+  constructor(private fb:UntypedFormBuilder,private router:Router,private dataService:DataService) { 
     this.myForm=this.fb.group({
       firstName:['',Validators.required],
       lastName:['',Validators.required],
