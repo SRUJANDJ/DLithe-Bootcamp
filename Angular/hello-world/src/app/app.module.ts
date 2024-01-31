@@ -8,6 +8,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http'
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { ToastrModule } from 'ngx-toastr';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule
   ],
   providers: [],
   bootstrap: [AppComponent]
